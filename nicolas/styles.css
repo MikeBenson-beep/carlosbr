@@ -45,9 +45,9 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.04em;
 }
 .brand img {
-  height: 44px;
-  width: auto;
-  max-width: 220px;
+  height: 56px;
+  width: 56px;
+  max-width: 56px;
   object-fit: contain;
 }
 .brand span { color: var(--lime); }
@@ -341,7 +341,7 @@ footer p { font-size: 10px; margin: 0; }
   .site-header { height: 65px; }
   .site-header nav { display: none; }
   .header-cta { font-size: 10px; }
-  .brand img { height: 34px; }
+  .brand img { height: 46px; width: 46px; max-width: 46px; }
   .hero {
     height: auto;
     min-height: 100svh;
