@@ -90,8 +90,8 @@ nav a,
 }
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(11, 43, 69, 0.94) 0%, rgba(11, 43, 69, 0.74) 35%, rgba(11, 43, 69, 0.16) 70%),
-    linear-gradient(0deg, rgba(11, 43, 69, 0.58), transparent 55%);
+    linear-gradient(90deg, rgba(11, 43, 69, 0.98) 0%, rgba(11, 43, 69, 0.92) 38%, rgba(11, 43, 69, 0.5) 72%, rgba(11, 43, 69, 0.2) 100%),
+    linear-gradient(0deg, rgba(11, 43, 69, 0.72), rgba(11, 43, 69, 0.08) 65%);
 }
 
 .hero-content,
@@ -122,6 +122,7 @@ h1 {
   font: 700 clamp(54px, 8.1vw, 124px) / 0.91 "Playfair Display", Georgia, serif;
   letter-spacing: -0.065em;
   margin: 18px 0 26px;
+  text-shadow: 0 2px 18px rgba(11, 43, 69, 0.35);
 }
 h1 em,
 h2 em {
@@ -134,7 +135,8 @@ h2 em {
   max-width: 480px;
   font-size: 17px;
   line-height: 1.65;
-  color: #e3e8e7;
+  color: #ffffff;
+  text-shadow: 0 1px 10px rgba(11, 43, 69, 0.42);
 }
 .hero-actions {
   display: flex;
@@ -355,7 +357,7 @@ footer p { font-size: 10px; margin: 0; }
   .hero-image { object-position: 68% center; }
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(11, 43, 69, 0.18) 0%, rgba(11, 43, 69, 0.3) 42%, rgba(11, 43, 69, 0.9) 100%);
+      linear-gradient(180deg, rgba(11, 43, 69, 0.42) 0%, rgba(11, 43, 69, 0.58) 42%, rgba(11, 43, 69, 0.96) 100%);
   }
   .hero h1 {
     font-size: clamp(36px, 10.5vw, 46px);
