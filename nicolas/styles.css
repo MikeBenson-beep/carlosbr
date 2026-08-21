@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 :root {
-  --ink: #0d4f55;
-  --night: #0b6b72;
-  --cream: #eef8f8;
+  --ink: #0b2b45;
+  --night: #0b2b45;
+  --cream: #fdf8df;
   --paper: #ffffff;
-  --lime: #f07000;
-  --teal: #2aa0a0;
-  --yellow: #f0b000;
-  --line: #c5e4e4;
-  --muted: #4a7376;
+  --lime: #f27302;
+  --teal: #44a1a6;
+  --yellow: #fab60d;
+  --line: #c7e2df;
+  --muted: #557276;
   --pad: clamp(22px, 8vw, 132px);
 }
 
@@ -90,8 +90,8 @@ nav a,
 }
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(11, 107, 114, 0.92) 0%, rgba(11, 107, 114, 0.7) 35%, rgba(11, 107, 114, 0.14) 70%),
-    linear-gradient(0deg, rgba(11, 107, 114, 0.52), transparent 55%);
+    linear-gradient(90deg, rgba(11, 43, 69, 0.94) 0%, rgba(11, 43, 69, 0.74) 35%, rgba(11, 43, 69, 0.16) 70%),
+    linear-gradient(0deg, rgba(11, 43, 69, 0.58), transparent 55%);
 }
 
 .hero-content,
@@ -247,19 +247,19 @@ h2 em {
 .process li {
   display: grid;
   grid-template-columns: 80px 1fr;
-  border-top: 1px solid rgba(16, 27, 38, 0.34);
+  border-top: 1px solid rgba(11, 43, 69, 0.34);
   padding: 19px 0;
 }
-.process li:last-child { border-bottom: 1px solid rgba(16, 27, 38, 0.34); }
+.process li:last-child { border-bottom: 1px solid rgba(11, 43, 69, 0.34); }
 .process li > b { font: 500 11px "DM Mono", monospace; }
 .process h3 { font-size: 15px; margin: 0 0 4px; }
-.process li p { font-size: 13px; margin: 0; color: #0d4f55; }
+.process li p { font-size: 13px; margin: 0; color: var(--ink); }
 
 .detail,
 .faq {
   padding: clamp(70px, 10vw, 150px) var(--pad);
 }
-.detail { background: #e7f4f4; }
+.detail { background: #e6f3f1; }
 .detail h2 { margin: 18px 0 42px; }
 .detail article,
 .faq details {
@@ -283,7 +283,7 @@ h2 em {
   color: var(--muted);
 }
 
-.faq { background: #fff4cc; }
+.faq { background: #fff1c2; }
 .faq .section-label { margin-bottom: 28px; }
 .faq summary { cursor: pointer; }
 .faq summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
@@ -316,8 +316,8 @@ footer {
   align-items: center;
   padding: 24px clamp(22px, 5vw, 76px);
   background: var(--night);
-  border-top: 1px solid #1a848a;
-  color: #c5e4e4;
+  border-top: 1px solid #2f979a;
+  color: #c7e2df;
 }
 footer p { font-size: 10px; margin: 0; }
 
@@ -355,7 +355,7 @@ footer p { font-size: 10px; margin: 0; }
   .hero-image { object-position: 68% center; }
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(11, 107, 114, 0.18) 0%, rgba(11, 107, 114, 0.28) 42%, rgba(11, 107, 114, 0.88) 100%);
+      linear-gradient(180deg, rgba(11, 43, 69, 0.18) 0%, rgba(11, 43, 69, 0.3) 42%, rgba(11, 43, 69, 0.9) 100%);
   }
   .hero h1 {
     font-size: clamp(36px, 10.5vw, 46px);
