@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 :root {
-  --ink: #0b2b45;
-  --night: #0b2b45;
-  --cream: #fdf8df;
+  --ink: #0b3153;
+  --night: #44a1a6;
+  --cream: #ffffff;
   --paper: #ffffff;
   --lime: #f27302;
   --teal: #44a1a6;
   --yellow: #fab60d;
-  --line: #c7e2df;
-  --muted: #557276;
+  --line: #b9dede;
+  --muted: #436b70;
   --pad: clamp(22px, 8vw, 132px);
 }
 
@@ -90,8 +90,8 @@ nav a,
 }
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(11, 43, 69, 0.98) 0%, rgba(11, 43, 69, 0.92) 38%, rgba(11, 43, 69, 0.5) 72%, rgba(11, 43, 69, 0.2) 100%),
-    linear-gradient(0deg, rgba(11, 43, 69, 0.72), rgba(11, 43, 69, 0.08) 65%);
+    linear-gradient(90deg, rgba(47, 151, 154, 0.98) 0%, rgba(47, 151, 154, 0.94) 38%, rgba(68, 161, 166, 0.58) 72%, rgba(68, 161, 166, 0.2) 100%),
+    linear-gradient(0deg, rgba(11, 49, 83, 0.72), rgba(11, 49, 83, 0.08) 65%);
 }
 
 .hero-content,
@@ -122,7 +122,7 @@ h1 {
   font: 700 clamp(54px, 8.1vw, 124px) / 0.91 "Playfair Display", Georgia, serif;
   letter-spacing: -0.065em;
   margin: 18px 0 26px;
-  text-shadow: 0 2px 18px rgba(11, 43, 69, 0.35);
+  text-shadow: 0 2px 18px rgba(11, 49, 83, 0.35);
 }
 h1 em,
 h2 em {
@@ -136,7 +136,7 @@ h2 em {
   font-size: 17px;
   line-height: 1.65;
   color: #ffffff;
-  text-shadow: 0 1px 10px rgba(11, 43, 69, 0.42);
+  text-shadow: 0 1px 10px rgba(11, 49, 83, 0.42);
 }
 .hero-actions {
   display: flex;
@@ -204,11 +204,11 @@ h2 em {
   border-right: 0;
   display: flex;
   flex-direction: column;
-  background: #dff3f3;
+  background: #dceff0;
 }
 .service:last-child { border-right: 1px solid var(--line); }
 .service:nth-child(2) { background: var(--paper); }
-.service:nth-child(3) { background: #fff4cc; }
+.service:nth-child(3) { background: #fff0bd; }
 .service span {
   font: 500 11px "DM Mono", monospace;
   color: var(--teal);
@@ -230,10 +230,10 @@ h2 em {
   letter-spacing: 0.06em;
 }
 .service a b { font-size: 16px; margin-left: 7px; }
-.service-dark { background: var(--night); color: #fff; }
-.service-dark span { color: var(--yellow); }
-.service-dark p { color: #d7ecec; }
-.service-dark a { color: var(--yellow); }
+.service-dark { background: var(--lime); color: #fff; }
+.service-dark span { color: #fff; }
+.service-dark p { color: #fff; }
+.service-dark a { color: #fff; }
 
 .process {
   background: var(--yellow);
@@ -261,7 +261,7 @@ h2 em {
 .faq {
   padding: clamp(70px, 10vw, 150px) var(--pad);
 }
-.detail { background: #e6f3f1; }
+.detail { background: #e4f2f2; }
 .detail h2 { margin: 18px 0 42px; }
 .detail article,
 .faq details {
@@ -289,17 +289,17 @@ h2 em {
   font-weight: 700;
 }
 
-.faq { background: #fff1c2; }
+.faq { background: #fff0bd; }
 .faq .section-label { margin-bottom: 28px; }
 .faq summary { cursor: pointer; }
 .faq summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 
 .contact {
-  background: var(--night);
+  background: var(--teal);
   color: #fff;
   padding: clamp(78px, 12vw, 170px) var(--pad);
 }
-.contact .section-label { color: var(--lime); margin-bottom: 39px; }
+.contact .section-label { color: var(--yellow); margin-bottom: 39px; }
 .contact h2 { margin-bottom: 24px; }
 .contact p {
   max-width: 420px;
@@ -308,9 +308,9 @@ h2 em {
 }
 .contact-link {
   display: inline-block;
-  border-bottom: 1px solid var(--lime);
+  border-bottom: 1px solid var(--yellow);
   padding-bottom: 10px;
-  color: var(--lime);
+  color: var(--yellow);
   font-weight: 700;
   text-decoration: none;
 }
@@ -323,8 +323,8 @@ footer {
   align-items: center;
   padding: 24px clamp(22px, 5vw, 76px);
   background: var(--night);
-  border-top: 1px solid #2f979a;
-  color: #c7e2df;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
 }
 footer p { font-size: 10px; margin: 0; }
 
@@ -362,7 +362,7 @@ footer p { font-size: 10px; margin: 0; }
   .hero-image { object-position: 68% center; }
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(11, 43, 69, 0.42) 0%, rgba(11, 43, 69, 0.58) 42%, rgba(11, 43, 69, 0.96) 100%);
+      linear-gradient(180deg, rgba(68, 161, 166, 0.58) 0%, rgba(47, 151, 154, 0.76) 42%, rgba(11, 49, 83, 0.96) 100%);
   }
   .hero h1 {
     font-size: clamp(36px, 10.5vw, 46px);
