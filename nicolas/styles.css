@@ -284,6 +284,10 @@ h2 em {
   font-size: 14px;
   color: var(--muted);
 }
+.detail span a {
+  color: var(--ink);
+  font-weight: 700;
+}
 
 .faq { background: #fff1c2; }
 .faq .section-label { margin-bottom: 28px; }
@@ -310,6 +314,7 @@ h2 em {
   font-weight: 700;
   text-decoration: none;
 }
+.map-link { margin-left: 28px; }
 
 footer {
   display: flex;
@@ -395,6 +400,7 @@ footer p { font-size: 10px; margin: 0; }
   .faq,
   .contact { padding-inline: 22px; }
   footer { align-items: flex-start; flex-direction: column; }
+  .map-link { margin: 18px 0 0; }
 }
 
 @media (max-width: 490px) {
