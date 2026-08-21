@@ -289,6 +289,11 @@ h2 em {
   font: 700 clamp(30px, 3.2vw, 47px)/0.98 "Playfair Display", Georgia, serif;
   letter-spacing: -0.05em;
 }
+.program-title-icon {
+  display: block;
+  margin-bottom: 13px;
+  font: 400 24px/1 sans-serif;
+}
 .program-lead {
   min-height: 76px;
   max-width: 340px;
@@ -305,18 +310,10 @@ h2 em {
   list-style: none;
 }
 .program-card li {
-  position: relative;
-  padding-left: 18px;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 7px;
   font-size: 13px;
-}
-.program-card li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.6em;
-  width: 7px;
-  height: 2px;
-  background: var(--ink);
 }
 
 .extras {
