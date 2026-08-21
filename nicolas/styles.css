@@ -382,6 +382,16 @@ h2 em {
   border-radius: 50%;
   background: var(--lime);
 }
+.cambridge-mark {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid currentColor;
+  color: #1d4b82;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.cambridge-mark b { font-weight: 700; }
 .extras-link {
   display: inline-flex;
   min-height: 52px;
@@ -511,6 +521,17 @@ footer p { font-size: 10px; margin: 0; }
 .client-photo:empty { display: none; }
 .client-photo img { width: 100%; height: 160px; object-fit: cover; }
 .client-photo-wide img { height: 320px; }
+.campus-gallery {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: 12px;
+  margin: 12px 0 38px;
+}
+.campus-gallery img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+}
 
 .whatsapp-float img { width: 27px; height: 27px; }
 .whatsapp-float:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
@@ -584,6 +605,8 @@ footer p { font-size: 10px; margin: 0; }
   .detail,
   .faq,
   .contact { padding-inline: 22px; }
+  .campus-gallery { grid-template-columns: 1fr 1fr; }
+  .campus-gallery img { height: 125px; }
   footer { align-items: flex-start; flex-direction: column; }
   .map-link { margin: 18px 0 0; }
 }
@@ -612,6 +635,8 @@ footer p { font-size: 10px; margin: 0; }
   .extra-card:first-child { border-top: 0; }
   .extra-card h3 { min-height: 0; margin-top: 28px; }
   .extras-link { width: 100%; justify-content: center; }
+  .campus-gallery { grid-template-columns: 1fr; }
+  .campus-gallery img { height: 190px; }
   footer { gap: 15px; }
 }
 
