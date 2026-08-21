@@ -550,7 +550,7 @@ footer p { font-size: 10px; margin: 0; }
   .hero-image { object-position: 68% center; }
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(68, 161, 166, 0.42) 0%, rgba(3, 33, 69, 0.7) 42%, rgba(3, 33, 69, 0.98) 100%);
+      linear-gradient(180deg, rgba(68, 161, 166, 0.28) 0%, rgba(3, 33, 69, 0.68) 42%, rgba(3, 33, 69, 0.98) 100%);
   }
   .hero h1 {
     font-size: clamp(36px, 10.5vw, 46px);
