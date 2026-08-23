@@ -9,8 +9,7 @@ img{display:block;max-width:100%}
 p{line-height:1.65}
 .site-header{position:absolute;z-index:10;inset:0 0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:92px;padding:0 var(--pad);border-bottom:1px solid rgba(255,255,255,.22);color:#fff}
 .brand{display:flex;align-items:center;gap:13px;width:max-content}
-.brand-mark{position:relative;display:grid;width:39px;height:39px;place-items:center;border:1px solid rgba(255,255,255,.65);border-radius:50%;font:400 13px var(--serif);letter-spacing:.04em}
-.brand-mark:after{content:'';position:absolute;right:2px;bottom:3px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.brand-mark{display:block;width:42px;height:42px;object-fit:contain}
 .brand-name{font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
 .brand-name small{display:block;margin-top:5px;color:#b9af9e;font-size:6px;letter-spacing:.28em}
 .site-header nav{display:flex;gap:36px;font-size:8px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
@@ -33,12 +32,7 @@ p{line-height:1.65}
 .hero-index{position:absolute;z-index:2;right:var(--pad);bottom:52px;margin:0;text-align:right;color:#a69c8c;font-size:7px;letter-spacing:.16em;text-transform:uppercase}
 
 .master-brand{display:grid;grid-template-columns:.72fr 1.28fr;align-items:center;min-height:680px;padding:clamp(90px,11vw,150px) var(--pad);color:#fff;background:#17130f}
-.master-emblem{position:relative;display:grid;width:min(420px,36vw);aspect-ratio:1;place-items:center;border:1px solid rgba(199,162,99,.65);border-radius:50%;font:400 clamp(72px,10vw,155px) var(--serif);color:var(--ivory)}
-.master-emblem:before,.master-emblem:after{content:'';position:absolute;border:1px solid rgba(199,162,99,.24);border-radius:50%}
-.master-emblem:before{inset:8%}.master-emblem:after{inset:18%}
-.master-emblem span{position:relative;z-index:2}
-.master-emblem i{position:absolute;z-index:3;top:12%;left:50%;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:-22px 8px 0 rgba(199,162,99,.55),22px 8px 0 rgba(199,162,99,.55)}
-.master-emblem b{position:absolute;z-index:3;right:8%;bottom:12%;display:grid;width:52px;height:52px;place-items:center;border-radius:50%;color:var(--black);background:var(--gold);font:600 10px var(--sans)}
+.master-emblem{display:block;width:min(470px,39vw);height:auto;object-fit:contain}
 .master-copy{padding-left:8vw}
 .master-copy h2{margin:0;font:400 clamp(54px,7vw,108px)/.9 var(--serif);letter-spacing:-.055em}
 .master-copy h2 small{display:block;margin-top:25px;color:var(--gold);font:600 9px var(--sans);letter-spacing:.25em;text-transform:uppercase}
