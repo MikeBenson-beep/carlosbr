@@ -41,8 +41,9 @@ nav a:hover { color: var(--copper-light); }
 .eyebrow, .section-index { font: 500 10px/1.4 DM Mono, monospace; letter-spacing: .14em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 11px; color: var(--copper-light); margin-bottom: 25px; }
 .eyebrow i { width: 34px; height: 1px; background: currentColor; }
-h1 { margin: 0 0 28px; font: 600 clamp(64px, 9.4vw, 142px)/.78 Manrope, sans-serif; letter-spacing: -.085em; }
+h1 { margin: 0 0 30px; font: 400 clamp(58px, 8vw, 118px)/.88 Manrope, sans-serif; letter-spacing: -.065em; }
 h1 em, h2 em { font: 400 italic .95em/1 Newsreader, serif; letter-spacing: -.04em; color: var(--copper-light); }
+.hero h1 em { font: inherit; font-style: normal; letter-spacing: inherit; color: var(--copper-light); }
 .hero-lead { max-width: 580px; font-size: clamp(16px, 1.35vw, 19px); color: rgba(255,255,255,.78); }
 .hero-actions { display: flex; align-items: center; gap: 28px; margin-top: 34px; }
 .button { border: 0; display: inline-flex; align-items: center; justify-content: space-between; min-width: 220px; gap: 35px; padding: 17px 19px; font-size: 11px; font-weight: 700; text-decoration: none; cursor: pointer; }
@@ -143,7 +144,7 @@ footer { display: grid; grid-template-columns: 1fr 1fr; padding: 75px var(--pad)
   .site-header.menu-open .menu-toggle span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
   .hero { min-height: 700px; padding: 125px 24px 70px; }
   .hero-content { width: 100%; }
-  h1 { font-size: clamp(58px, 16vw, 84px); line-height: .84; }
+  h1 { font-size: clamp(54px, 14vw, 76px); line-height: .92; }
   .hero-meta { display: none; }
   .scroll-note { display: none; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
