@@ -65,7 +65,7 @@ form?.addEventListener("submit", (event) => {
     return;
   }
   if (formStatus) {
-    formStatus.textContent = "Tu solicitud está lista. El envío se habilitará cuando SILVATI confirme su WhatsApp o correo comercial.";
+    formStatus.textContent = "Tu solicitud está preparada. Revisa los datos antes de continuar.";
   }
 });
 
