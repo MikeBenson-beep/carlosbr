@@ -516,11 +516,11 @@ footer { padding: 70px var(--pad) 24px; display: grid; grid-template-columns: 1.
   .menu-toggle i::before { content: ""; position: absolute; top: 6px; }
   .menu-open .menu-toggle i { transform: rotate(45deg); }
   .menu-open .menu-toggle i::before { top: 0; transform: rotate(90deg); }
-  .site-header.menu-open { background: var(--paper); color: var(--ink); border-bottom-color: var(--line); }
+  .site-header.menu-open { position: fixed; inset: 0 0 auto; height: 74px; background: var(--paper); color: var(--ink); border-bottom-color: var(--line); backdrop-filter: none; }
   .site-header.menu-open .menu-toggle { color: var(--ink); }
   .site-header.menu-open .brand strong { color: var(--ink); }
   .site-header.menu-open .brand span { color: var(--orange-dark); }
-  .site-header nav { position: fixed; inset: 74px 0 0; padding: 34px var(--pad); display: none; flex-direction: column; align-items: flex-start; gap: 0; background: var(--paper); color: var(--ink); border-top: 1px solid var(--line); }
+  .site-header nav { position: fixed; inset: 74px 0 0; padding: 34px var(--pad); display: none; flex-direction: column; align-items: flex-start; gap: 0; overflow-y: auto; overscroll-behavior: contain; background: var(--paper); color: var(--ink); border-top: 1px solid var(--line); }
   .site-header.menu-open nav { display: flex; }
   .site-header nav a { width: 100%; padding: 20px 6px; border-bottom: 1px solid var(--line); color: var(--ink); font: 700 34px/1 var(--display); text-transform: uppercase; transition: color .2s ease, padding .25s ease; }
   .site-header nav a::after { inset: 18px auto 18px 0; width: 3px; height: auto; transform: scaleY(0); transform-origin: center; }
