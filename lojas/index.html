@@ -7,12 +7,13 @@
     <meta name="theme-color" content="#f5f3ef">
     <meta property="og:title" content="Lojas Americanas SG · Catálogo">
     <meta property="og:description" content="Productos para Paraguay y Brasil desde Salto del Guairá.">
-    <meta property="og:image" content="assets/catalog/product-bitonera-engineering.webp">
+    <meta property="og:image" content="assets/hero.webp">
     <title>Lojas Americanas SG · Catálogo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="form.css?v=1">
   </head>
   <body>
     <header class="site-header">
@@ -21,7 +22,7 @@
         <span><strong>Lojas Americanas</strong><small>Salto del Guairá</small></span>
       </a>
       <nav aria-label="Navegación principal"><a href="#categorias">Categorías</a><a href="#productos">Productos</a></nav>
-      <a class="header-contact" href="https://wa.me/595973227879" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
+      <a class="header-contact" href="#consulta">Consultar <span>↘</span></a>
     </header>
 
     <main id="inicio">
@@ -32,53 +33,54 @@
           <p class="hero-lead">Juguetes a control remoto, electrónica y accesorios seleccionados en Salto del Guairá.</p>
           <div class="hero-actions">
             <a class="button primary" href="#productos">Ver productos <span>↓</span></a>
-            <a class="button text-button" href="https://wa.me/595973227879?text=Hola%2C%20quiero%20consultar%20el%20cat%C3%A1logo" target="_blank" rel="noopener">Consultar <span>↗</span></a>
+            <a class="button text-button" href="#consulta">Consultar <span>↘</span></a>
           </div>
           <div class="hero-meta"><span>Atención directa</span><span>Precios en guaraníes</span></div>
         </div>
-        <article class="hero-product" data-product-id="bitonera-engineering" tabindex="0" role="button" aria-label="Ver Bitonera Engineering 20-2">
-          <span class="hero-index">01 / Destacado</span>
-          <img src="assets/catalog/product-bitonera-engineering.webp" alt="Bitonera Engineering 20-2">
-          <div><p>Control remoto · Luz · Sonido</p><h2>Bitonera Engineering 20-2</h2><strong>Gs. 250.000</strong></div>
+        <article class="hero-product" data-product-id="electronics" tabindex="0" role="button" aria-label="Ver electrónica y audio">
+          <span class="hero-index">01 / Colección</span>
+          <img src="assets/hero.webp" alt="Selección de electrónica, juguetes y accesorios">
+          <div><p>Tecnología · Diversión · Accesorios</p><h2>Una selección para Paraguay y Brasil</h2><strong>Consultar ↗</strong></div>
         </article>
       </section>
 
       <section class="categories section" id="categorias">
-        <div class="section-head"><div><p class="eyebrow">01 / Explorar</p><h2>Comprá por categoría.</h2></div><p>Todo el catálogo, organizado para encontrar rápido lo que buscás.</p></div>
+        <div class="section-head"><div><p class="eyebrow">01 / Explorar</p><h2>Comprá por categoría.</h2></div><p>Las líneas reales de la tienda, organizadas para encontrar rápido lo que buscás.</p></div>
         <div class="category-grid" id="category-grid"></div>
       </section>
 
       <section class="catalog section" id="productos">
-        <div class="section-head catalog-heading"><div><p class="eyebrow">02 / Productos</p><h2 id="catalog-title">Tractores a control remoto.</h2></div><p>Seleccioná un producto para ver sus detalles o consultá disponibilidad por WhatsApp.</p></div>
+        <div class="section-head catalog-heading"><div><p class="eyebrow">02 / Catálogo</p><h2 id="catalog-title">Productos y colecciones.</h2></div><p>Elegí una línea para preparar una consulta. Los modelos y precios se confirman directamente con la tienda.</p></div>
         <div class="catalog-tools">
           <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar en el catálogo" aria-label="Buscar productos"></label>
-          <div class="filters" role="group" aria-label="Filtrar productos"><button class="active" type="button" data-filter="all">Todos</button><button type="button" data-filter="available">Disponibles</button><button type="button" data-filter="unavailable">Agotados</button></div>
+          <div class="filters" role="group" aria-label="Filtrar productos"><button class="active" type="button" data-filter="all">Todos</button><button type="button" data-filter="electronics">Electrónica</button><button type="button" data-filter="toys">Juguetes</button><button type="button" data-filter="accessories">Accesorios</button></div>
           <p class="result-count" id="result-count" aria-live="polite"></p>
         </div>
         <div class="product-grid" id="product-grid"></div>
-        <div class="empty-state" id="empty-state" hidden><p id="empty-copy">No encontramos ese producto.</p><a id="empty-link" href="https://wa.me/595973227879" target="_blank" rel="noopener">Preguntar por WhatsApp ↗</a></div>
+        <div class="empty-state" id="empty-state" hidden><p id="empty-copy">No encontramos esa categoría.</p><a id="empty-link" href="#consulta">Preparar una consulta ↓</a></div>
       </section>
 
-      <section class="contact-strip">
+      <section class="contact-strip" id="consulta">
         <p class="eyebrow">¿No encontraste lo que buscabas?</p>
         <h2>Escribinos. Lo buscamos por vos.</h2>
-        <a class="button light" href="https://wa.me/595973227879?text=Hola%2C%20busco%20un%20producto%20que%20no%20vi%20en%20el%20cat%C3%A1logo" target="_blank" rel="noopener">Hablar por WhatsApp <span>↗</span></a>
+        <form class="quick-inquiry" id="quick-inquiry"><label><span>Tu nombre</span><input id="inquiry-name" type="text" placeholder="Nombre" required></label><label><span>¿Qué buscás?</span><input id="inquiry-product" type="text" placeholder="Producto o categoría" required></label><button class="button light" type="submit">Preparar consulta <span>↗</span></button></form>
+        <p class="contact-note" id="contact-note">La consulta se comparte por la aplicación que prefieras. El contacto directo se conectará cuando la tienda confirme su WhatsApp.</p>
       </section>
     </main>
 
     <footer>
       <a class="brand footer-brand" href="#inicio"><span class="brand-mark">LA</span><span><strong>Lojas Americanas</strong><small>Salto del Guairá</small></span></a>
-      <p>Catálogo para Paraguay y Brasil.<br>Consultas: +595 973 227 879</p>
+      <p>Catálogo para Paraguay y Brasil.<br>Modelos y precios a confirmar.</p>
       <div><span>© <span id="year"></span></span><span>Tienda independiente · Salto del Guairá</span></div>
     </footer>
 
     <dialog class="product-dialog" id="product-dialog">
       <button class="dialog-close" type="button" aria-label="Cerrar detalle">×</button>
-      <div class="dialog-media"><img id="dialog-image" src="assets/catalog/product-bitonera-engineering.webp" alt=""></div>
+      <div class="dialog-media"><img id="dialog-image" src="assets/electronics.webp" alt=""></div>
       <div class="dialog-copy">
-        <p class="eyebrow">Tractores a control remoto</p><h2 id="dialog-title"></h2><p class="dialog-description" id="dialog-description"></p>
+        <p class="eyebrow">Lojas Americanas · Salto del Guairá</p><h2 id="dialog-title"></h2><p class="dialog-description" id="dialog-description"></p>
         <div class="dialog-price"><span id="dialog-status"></span><strong id="dialog-price"></strong></div>
-        <a class="button primary" id="dialog-whatsapp" href="#" target="_blank" rel="noopener">Consultar por WhatsApp <span>↗</span></a>
+        <a class="button primary" id="dialog-inquiry" href="#consulta">Preparar consulta <span>↘</span></a>
       </div>
     </dialog>
     <script src="script.js?v=2"></script>
