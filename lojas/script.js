@@ -1,0 +1,14 @@
+const header=document.getElementById("header");
+const menu=document.querySelector(".menu-toggle");
+const language=document.getElementById("language");
+let locale="es";
+document.getElementById("year").textContent=new Date().getFullYear();
+const syncHeader=()=>header.classList.toggle("scrolled",window.scrollY>35);
+syncHeader();window.addEventListener("scroll",syncHeader,{passive:true});
+menu?.addEventListener("click",()=>{const open=header.classList.toggle("menu-open");menu.setAttribute("aria-expanded",String(open))});
+document.querySelectorAll("nav a").forEach(link=>link.addEventListener("click",()=>header.classList.remove("menu-open")));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(element=>observer.observe(element));
+language?.addEventListener("click",()=>{locale=locale==="es"?"pt":"es";document.documentElement.lang=locale;document.querySelectorAll("[data-es][data-pt]").forEach(element=>{element.textContent=element.dataset[locale]});language.querySelectorAll("span").forEach((span,index)=>span.classList.toggle("active",index===(locale==="es"?0:1)))});
+document.querySelectorAll("[data-category-es]").forEach(link=>link.addEventListener("click",()=>{const select=document.getElementById("category");const value=link.dataset.categoryEs;if(value==="Electrónica")select.selectedIndex=1;if(value==="Juguetes")select.selectedIndex=2;if(value==="Accesorios")select.selectedIndex=3}));
+document.getElementById("inquiry-form")?.addEventListener("submit",async event=>{event.preventDefault();const name=document.getElementById("name").value.trim();const category=document.getElementById("category").value;const product=document.getElementById("product").value.trim();const text=locale==="es"?`Hola, soy ${name}. Quiero consultar por ${category}: ${product}`:`Olá, sou ${name}. Quero consultar sobre ${category}: ${product}`;if(navigator.share){await navigator.share({title:"Lojas Americanas SG",text})}else{await navigator.clipboard.writeText(text);alert(locale==="es"?"Consulta copiada. Pegala en tu aplicación de mensajes.":"Consulta copiada. Cole no seu aplicativo de mensagens.")}});
