@@ -1,0 +1,10 @@
+const header=document.getElementById("header");
+const menu=document.querySelector(".menu-toggle");
+document.getElementById("year").textContent=new Date().getFullYear();
+const syncHeader=()=>header.classList.toggle("scrolled",window.scrollY>35);
+syncHeader();window.addEventListener("scroll",syncHeader,{passive:true});
+menu?.addEventListener("click",()=>{const open=header.classList.toggle("menu-open");menu.setAttribute("aria-expanded",String(open));menu.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú")});
+document.querySelectorAll("nav a").forEach(link=>link.addEventListener("click",()=>{header.classList.remove("menu-open");menu?.setAttribute("aria-expanded","false")}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(element=>observer.observe(element));
+document.getElementById("quote-form")?.addEventListener("submit",event=>{event.preventDefault();const name=document.getElementById("name").value.trim();const type=document.getElementById("type").value;const idea=document.getElementById("idea").value.trim();const text=`Hola Carpintería Anzalone, soy ${name}. Quiero consultar por: ${type}. Mi idea es: ${idea}`;window.open(`https://wa.me/59896164888?text=${encodeURIComponent(text)}`,"_blank","noopener,noreferrer")});
