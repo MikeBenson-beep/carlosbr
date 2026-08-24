@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1717">
+  <meta name="description" content="Taxi privado en Puerto Vallarta. Traslados al aeropuerto, hoteles, villas y destinos de la bahía.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Vallarta Taxi Privado">
+  <meta property="og:description" content="Tu trayecto por Puerto Vallarta, coordinado con calma.">
+  <meta property="og:image" content="assets/puerto-vallarta.webp">
+  <title>Vallarta Taxi Privado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <a class="brand" href="#inicio" aria-label="Vallarta Taxi Privado, inicio">
+      <span class="brand-mark">VT</span>
+      <span class="brand-copy"><b>Vallarta</b><small>Taxi privado</small></span>
+    </a>
+    <nav id="nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#reservar">Reservar</a>
+    </nav>
+    <a class="nav-cta" href="#reservar">Solicitar traslado <span>↘</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Puerto Vallarta · Jalisco</p>
+        <h1 id="hero-title">Tu destino.<br><em>Sin prisa.</em></h1>
+        <p class="hero-lead">Traslados privados en Puerto Vallarta para llegar al aeropuerto, tu hotel o cualquier punto de la bahía con atención directa y un viaje tranquilo.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#reservar">Cotizar mi viaje <span>↘</span></a>
+          <a class="text-link" href="#servicios">Ver servicios <span>↓</span></a>
+        </div>
+        <div class="hero-meta" aria-label="Características del servicio">
+          <span><b>01</b> Atención personal</span>
+          <span><b>02</b> Rutas a tu medida</span>
+          <span><b>03</b> Servicio local</span>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/puerto-vallarta.webp" alt="Vista aérea del Malecón de Puerto Vallarta al atardecer">
+        <figcaption><span>20.6534° N</span><span>Bahía de Banderas</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="manifesto section-pad reveal" id="servicios">
+      <p class="section-label">01 / El servicio</p>
+      <div>
+        <h2>Muévete por Vallarta como si ya conocieras el camino.</h2>
+        <p>Un servicio sencillo y cercano: nos dices dónde estás, a dónde vas y a qué hora. Nosotros te ayudamos a coordinar el trayecto.</p>
+      </div>
+    </section>
+
+    <section class="services section-pad" aria-label="Servicios de taxi">
+      <article class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon" aria-hidden="true">✈</div>
+        <h3>Aeropuerto</h3>
+        <p>Recogidas y llegadas al Aeropuerto Internacional de Puerto Vallarta, coordinadas según tu itinerario.</p>
+        <a href="#reservar" data-service="Aeropuerto">Solicitar traslado <span>↗</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon" aria-hidden="true">◇</div>
+        <h3>Hoteles & villas</h3>
+        <p>Conexiones cómodas entre hoteles, villas, restaurantes y puntos de encuentro en la ciudad.</p>
+        <a href="#reservar" data-service="Hotel o villa">Solicitar traslado <span>↗</span></a>
+      </article>
+      <article class="service-card service-card-accent reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon" aria-hidden="true">⌁</div>
+        <h3>Bahía de Banderas</h3>
+        <p>Trayectos desde Puerto Vallarta hacia destinos cercanos. Cuéntanos tu ruta y consultamos disponibilidad.</p>
+        <a href="#reservar" data-service="Trayecto por la bahía">Consultar ruta <span>↗</span></a>
+      </article>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <figure class="experience-photo reveal">
+        <img src="assets/taxi-night.webp" alt="Taxi circulando de noche" loading="lazy">
+        <figcaption>De la primera maleta<br>hasta la última parada.</figcaption>
+      </figure>
+      <div class="experience-copy reveal">
+        <p class="section-label">02 / Viaja con calma</p>
+        <h2>La ciudad cambia.<br>La atención <em>no.</em></h2>
+        <p class="experience-lead">Vallarta se disfruta mejor cuando el traslado ya está resuelto. Atención directa para coordinar cada detalle antes de salir.</p>
+        <ul>
+          <li><span>01</span><div><b>Un punto de encuentro claro</b><p>Define origen, destino y horario desde tu solicitud.</p></div></li>
+          <li><span>02</span><div><b>La ruta que necesitas</b><p>Aeropuerto, hotel, centro o un destino fuera de la ciudad.</p></div></li>
+          <li><span>03</span><div><b>Confirmación personal</b><p>Recibe respuesta directa para acordar disponibilidad y tarifa.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="route-strip" aria-label="Zonas habituales">
+      <p>Puerto Vallarta</p><i></i><p>Aeropuerto</p><i></i><p>Marina</p><i></i><p>Zona Hotelera</p><i></i><p>Centro</p><i></i><p>Bahía</p>
+    </section>
+
+    <section class="booking section-pad" id="reservar">
+      <div class="booking-heading reveal">
+        <p class="section-label">03 / Tu próximo viaje</p>
+        <h2>¿A dónde<br><em>te llevamos?</em></h2>
+        <p>Completa los datos esenciales. Se preparará un mensaje con tu solicitud para compartir por WhatsApp.</p>
+      </div>
+      <form class="booking-form reveal" id="booking-form">
+        <div class="field field-wide">
+          <label for="name">Tu nombre</label>
+          <input id="name" name="name" autocomplete="name" placeholder="¿Cómo te llamas?" required>
+        </div>
+        <div class="field">
+          <label for="origin">Punto de partida</label>
+          <input id="origin" name="origin" placeholder="Aeropuerto, hotel, dirección..." required>
+        </div>
+        <div class="field">
+          <label for="destination">Destino</label>
+          <input id="destination" name="destination" placeholder="¿A dónde vas?" required>
+        </div>
+        <div class="field">
+          <label for="date">Fecha y hora</label>
+          <input id="date" name="date" type="datetime-local" required>
+        </div>
+        <div class="field">
+          <label for="passengers">Pasajeros</label>
+          <select id="passengers" name="passengers">
+            <option value="1 pasajero">1 pasajero</option>
+            <option value="2 pasajeros">2 pasajeros</option>
+            <option value="3 pasajeros">3 pasajeros</option>
+            <option value="4 pasajeros">4 pasajeros</option>
+            <option value="5 o más pasajeros">5 o más</option>
+          </select>
+        </div>
+        <button class="submit-button" type="submit"><span>Preparar solicitud</span><b>↗</b></button>
+        <p class="form-note" id="form-note" aria-live="polite">La disponibilidad y la tarifa se confirman de forma personal.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">VT</span><span class="brand-copy"><b>Vallarta</b><small>Taxi privado</small></span></a>
+    <p>Traslados en Puerto Vallarta<br>y Bahía de Banderas.</p>
+    <a href="#reservar" class="footer-cta">Reservar un viaje <span>↗</span></a>
+    <div class="footer-bottom"><span>© <span id="year"></span> Vallarta Taxi Privado</span><span>Puerto Vallarta · México</span></div>
+  </footer>
+
+  <a class="floating-cta" href="#reservar" aria-label="Solicitar traslado"><span>Solicitar traslado</span><b>↗</b></a>
+  <script src="script.js"></script>
+</body>
+</html>
