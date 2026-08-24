@@ -3,155 +3,204 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mike Hammer: clases de inglés empresarial online.">
-    <title>Mike Hammer | English Teacher</title>
+    <meta name="description" content="Clases online de inglés general, conversación y Business English con Mike Hammer. Atención individual y grupal para todos los niveles.">
+    <meta name="theme-color" content="#071722">
+    <title>Mike Hammer | English Mentoring</title>
+    <script>document.documentElement.classList.add("js")</script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/hero.png" as="image">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Mike Hammer, inicio">mike<span>english</span></a>
-      <nav aria-label="Principal">
-        <a href="#servicios">Clases</a>
-        <a href="#mike">Mike</a>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Mike Hammer, inicio">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span class="brand-copy"><strong>Mike Hammer</strong><small>English mentoring</small></span>
+      </a>
+      <nav id="site-nav" aria-label="Navegación principal">
+        <a href="#clases">Clases</a>
+        <a href="#mike">Sobre Mike</a>
+        <a href="#metodo">Método</a>
         <a href="#niveles">Niveles</a>
-        <a href="#proceso">Cómo trabajamos</a>
       </nav>
-      <a class="header-cta" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Escribir por WhatsApp <span>↗</span></a>
+      <a class="header-cta" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Agendar conversación <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span></button>
     </header>
 
-    <main id="inicio">
-      <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/hero.png" alt="">
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero.png" alt="Espacio de trabajo preparado para una clase de inglés online">
         <div class="hero-shade"></div>
-        <div class="hero-content">
-          <p class="kicker"><i></i> English teacher online</p>
-          <h1 id="hero-title">Inglés para <em>comunicar.</em></h1>
-          <p class="hero-copy">Clases online de inglés general y de negocios para comunicarte con confianza en la vida diaria y profesional.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Consultar clases <span>↗</span></a>
-            <a class="button button-quiet" href="#servicios">Ver clases <span>↓</span></a>
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow"><span></span> Private English mentoring · online</p>
+            <h1 id="hero-title">Tu inglés.<br><em>Tu próxima</em><br>oportunidad.</h1>
+            <p class="hero-copy">Clases de inglés general y de negocios diseñadas alrededor de tu nivel, tus objetivos y las conversaciones que realmente necesitas tener.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Hablar con Mike <span aria-hidden="true">↗</span></a>
+              <a class="button button-ghost" href="#clases">Explorar las clases <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
+          <aside class="hero-note reveal" aria-label="Características de las clases">
+            <span class="hero-note-index">01 — 03</span>
+            <p>Inglés práctico para expresarte con claridad en contextos cotidianos y profesionales.</p>
+            <div><span>Online</span><span>Individual</span><span>Grupal</span></div>
+          </aside>
         </div>
-        <div class="hero-proof">
-          <strong>01</strong>
-          <span>Todos los niveles<br>Clases individuales y grupales.</span>
+        <a class="scroll-cue" href="#clases" aria-label="Bajar a la sección de clases"><span></span>Descubrir</a>
+      </section>
+
+      <section class="signature-strip" aria-label="Propuesta de valor">
+        <p>English for real conversations</p><i></i><p>Every level, A1 to C2</p><i></i><p>Business &amp; everyday life</p>
+      </section>
+
+      <section class="intro section" id="clases">
+        <div class="section-tag reveal"><span>01</span> The programme</div>
+        <div class="intro-copy reveal">
+          <p class="eyebrow dark">Un enfoque hecho a tu medida</p>
+          <h2>No necesitas hablar perfecto.<br>Necesitas hablar <em>con confianza.</em></h2>
+          <p>Elige el enfoque que más se ajusta a tu momento. Cada clase combina práctica, conversación y acompañamiento personalizado.</p>
         </div>
       </section>
 
-      <section class="intro" id="servicios">
-        <p class="section-label">01 / Clases</p>
-        <div>
-          <h2>Clases pensadas para tu objetivo.</h2>
-          <p>Inglés general, de negocios y conversación con clases adaptadas a tu nivel, tus intereses y tus objetivos.</p>
-        </div>
-      </section>
-
-      <section class="services" aria-label="Clases de inglés">
-        <article class="service">
-          <span>01</span>
-          <figure class="service-photo service-photo-general"><img src="assets/client-reference.jpg" alt="Ejemplo de inglés general para situaciones cotidianas"></figure>
-          <h3>Inglés general</h3>
-          <p>Comunícate con confianza en conversaciones cotidianas, viajes y nuevas experiencias.</p>
-          <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20consultar%20por%20ingl%C3%A9s%20general." target="_blank" rel="noreferrer">Consultar <b>↗</b></a>
+      <section class="services section" aria-label="Modalidades de clases de inglés">
+        <article class="service-card service-featured reveal">
+          <figure><img src="assets/english-mentoring-editorial.webp" alt="Profesionales practicando inglés de negocios" loading="lazy"></figure>
+          <div class="service-number">01</div>
+          <div class="service-content">
+            <p class="service-kicker">Professional communication</p>
+            <h3>Business<br>English</h3>
+            <p>Prepárate para reuniones, entrevistas, presentaciones y situaciones reales de trabajo.</p>
+            <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20consultar%20por%20Business%20English." target="_blank" rel="noreferrer">Consultar esta clase <span>↗</span></a>
+          </div>
         </article>
-        <article class="service">
-          <span>02</span>
-          <figure class="service-photo service-photo-business"><img src="assets/client-reference.jpg" alt="Ejemplo de Business English para contextos profesionales"></figure>
-          <h3>Business English</h3>
-          <p>Inglés para reuniones, entrevistas, presentaciones y situaciones de trabajo.</p>
-          <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20consultar%20por%20Business%20English." target="_blank" rel="noreferrer">Consultar <b>↗</b></a>
+        <article class="service-card reveal">
+          <figure><img src="assets/english-mentoring-editorial.webp" alt="Alumno practicando inglés general en una conversación" loading="lazy"></figure>
+          <div class="service-number">02</div>
+          <div class="service-content">
+            <p class="service-kicker">Everyday communication</p>
+            <h3>Inglés<br>general</h3>
+            <p>Comunícate con soltura en viajes, conversaciones cotidianas y nuevas experiencias.</p>
+            <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20consultar%20por%20ingl%C3%A9s%20general." target="_blank" rel="noreferrer">Consultar esta clase <span>↗</span></a>
+          </div>
         </article>
-        <article class="service">
-          <span>03</span>
-          <figure class="service-photo"><img src="assets/conversation-english.jpeg" alt="Ejemplo de una conversación práctica en inglés"></figure>
-          <h3>Conversación</h3>
-          <p>Práctica con situaciones reales para mejorar fluidez, pronunciación y seguridad.</p>
-          <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20mejorar%20mi%20conversaci%C3%B3n%20en%20ingl%C3%A9s." target="_blank" rel="noreferrer">Consultar <b>↗</b></a>
-        </article>
-        <article class="service service-dark">
-          <span>04</span>
-          <figure class="service-photo"><img src="assets/hero.png" alt="Ejemplo de una clase de inglés online desde casa"></figure>
-          <h3>Individual o en grupo</h3>
-          <p>Clases 100% online con un enfoque personalizado para avanzar a tu ritmo.</p>
-          <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20individuales%20y%20grupales." target="_blank" rel="noreferrer">Consultar <b>↗</b></a>
+        <article class="service-card reveal">
+          <figure><img src="assets/english-mentoring-editorial.webp" alt="Grupo de adultos conversando en inglés" loading="lazy"></figure>
+          <div class="service-number">03</div>
+          <div class="service-content">
+            <p class="service-kicker">Fluency &amp; pronunciation</p>
+            <h3>English<br>conversation</h3>
+            <p>Gana fluidez, mejora tu pronunciación y aprende a reaccionar con naturalidad.</p>
+            <a href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20mejorar%20mi%20conversaci%C3%B3n%20en%20ingl%C3%A9s." target="_blank" rel="noreferrer">Consultar esta clase <span>↗</span></a>
+          </div>
         </article>
       </section>
 
       <section class="teacher" id="mike" aria-labelledby="teacher-title">
-        <figure class="teacher-photo"><img src="assets/mike-hammer.jpeg" alt="Mike Hammer, profesor de inglés online"></figure>
-        <div class="teacher-copy">
-          <p class="section-label">02 / Sobre mí</p>
-          <h2 id="teacher-title">Hola, soy<br><em>Mike Hammer.</em></h2>
-          <p>Soy profesor de inglés online. Mis clases están orientadas a ayudarte a desarrollar una comunicación útil para la vida cotidiana, los viajes y el entorno profesional.</p>
-          <p>Adapto cada clase a tu nivel, tus intereses y tus metas. Quiero que practiques de manera constante en un ambiente amigable y motivador, para que puedas hablar con mayor confianza.</p>
-          <ul>
-            <li><span>01</span>Enseño inglés general y de negocios</li>
-            <li><span>02</span>Ofrezco clases individuales y para grupos</li>
-            <li><span>03</span>Trabajo con principiantes, intermedios y avanzados</li>
-            <li><span>04</span>Imparto todas mis clases 100% online</li>
-          </ul>
-          <a class="teacher-link" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20tus%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Habla conmigo <span>↗</span></a>
+        <div class="teacher-portrait reveal">
+          <figure><img src="assets/mike-hammer.jpeg" alt="Mike Hammer, profesor de inglés online" loading="lazy"></figure>
+          <div class="portrait-caption"><span>Mike Hammer</span><span>English teacher · online</span></div>
+        </div>
+        <div class="teacher-content reveal">
+          <div class="section-tag light"><span>02</span> Your mentor</div>
+          <p class="eyebrow">Personal. Practical. Focused.</p>
+          <h2 id="teacher-title">Aprende inglés con alguien que <em>te escucha.</em></h2>
+          <p class="teacher-lead">Soy Mike. Te acompaño a desarrollar un inglés útil para tu vida cotidiana, tus viajes y tu entorno profesional.</p>
+          <p>Cada clase se adapta a tu nivel, intereses y metas. Practicamos de manera constante en un ambiente cercano y motivador, para que puedas expresarte con mayor seguridad.</p>
+          <div class="teacher-pillars">
+            <div><b>01</b><span>Clases 100% online</span></div>
+            <div><b>02</b><span>Atención individual o grupal</span></div>
+            <div><b>03</b><span>Desde principiantes hasta avanzados</span></div>
+          </div>
+          <a class="text-link" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20tus%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Conoce a Mike <span>↗</span></a>
         </div>
       </section>
 
-      <section class="process" id="proceso">
-        <p class="section-label">03 / Cómo trabajamos</p>
-        <div class="process-heading">
-          <h2>Aprende, practica<br>y progresa.</h2>
-          <p>Un recorrido simple para desarrollar el inglés que necesitas en tu vida diaria o profesional.</p>
+      <section class="method section" id="metodo">
+        <div class="method-heading reveal">
+          <div class="section-tag"><span>03</span> The method</div>
+          <p class="eyebrow dark">Un camino claro</p>
+          <h2>Aprende.<br><em>Practica.</em><br>Progresa.</h2>
+          <p>Un proceso simple para convertir tus objetivos en conversaciones reales.</p>
         </div>
-        <ol>
-          <li><b>01</b><div><h3>Cuéntanos tu objetivo</h3><p>Comparte qué deseas mejorar y en qué situaciones necesitas usar el idioma.</p></div></li>
-          <li><b>02</b><div><h3>Definimos el enfoque</h3><p>Las clases se adaptan a tu nivel, disponibilidad e intereses.</p></div></li>
-          <li><b>03</b><div><h3>Tomas tus clases online</h3><p>Practicas conversaciones reales y avanzas con acompañamiento personalizado.</p></div></li>
+        <ol class="method-list">
+          <li class="reveal"><b>01</b><div><h3>Cuéntame tu objetivo</h3><p>Hablamos de qué quieres mejorar y dónde necesitas usar el idioma.</p></div><span>Discover</span></li>
+          <li class="reveal"><b>02</b><div><h3>Definimos tu enfoque</h3><p>Adaptamos las clases a tu nivel, disponibilidad e intereses.</p></div><span>Design</span></li>
+          <li class="reveal"><b>03</b><div><h3>Practicas en contexto</h3><p>Trabajamos situaciones reales con acompañamiento personalizado.</p></div><span>Develop</span></li>
         </ol>
       </section>
 
-      <section class="levels" id="niveles" aria-labelledby="levels-title">
-        <div class="levels-heading">
-          <p class="section-label">04 / Todos los niveles</p>
-          <h2 id="levels-title">Avanza desde A1<br>hasta <em>C2.</em></h2>
-          <p>Las clases se ajustan a tu punto de partida y al nivel de comunicación que deseas alcanzar.</p>
+      <section class="levels section" id="niveles" aria-labelledby="levels-title">
+        <div class="levels-top reveal">
+          <div>
+            <div class="section-tag light"><span>04</span> Your level</div>
+            <p class="eyebrow">A route for every starting point</p>
+          </div>
+          <div>
+            <h2 id="levels-title">De tu primera frase<br>a tu <em>mejor versión.</em></h2>
+            <p>El contenido y el ritmo se ajustan al punto en el que estás y al nivel de comunicación que deseas alcanzar.</p>
+          </div>
         </div>
-        <div class="level-grid">
-          <article><b>A1</b><strong>Inicial</strong><span>Saludos, presentaciones y frases sencillas.</span></article>
-          <article><b>A2</b><strong>Básico</strong><span>Rutinas, compras y mensajes cotidianos.</span></article>
-          <article><b>B1</b><strong>Intermedio</strong><span>Conversaciones, viajes y temas conocidos.</span></article>
-          <article><b>B2</b><strong>Intermedio alto</strong><span>Opiniones y textos de mayor complejidad.</span></article>
-          <article><b>C1</b><strong>Avanzado</strong><span>Expresión fluida en contextos profesionales.</span></article>
-          <article><b>C2</b><strong>Dominio</strong><span>Precisión y matices en cualquier situación.</span></article>
+        <div class="level-track reveal">
+          <article><b>A1</b><strong>Inicial</strong><span>Primeras conversaciones</span></article>
+          <article><b>A2</b><strong>Básico</strong><span>Situaciones cotidianas</span></article>
+          <article><b>B1</b><strong>Intermedio</strong><span>Autonomía al hablar</span></article>
+          <article><b>B2</b><strong>Intermedio alto</strong><span>Ideas más complejas</span></article>
+          <article><b>C1</b><strong>Avanzado</strong><span>Fluidez profesional</span></article>
+          <article><b>C2</b><strong>Dominio</strong><span>Precisión y matices</span></article>
         </div>
       </section>
 
-      <section class="detail" id="enfoque">
-        <p class="section-label">05 / Enfoque</p>
-        <h2>Inglés para<br>la <em>vida real.</em></h2>
-        <figure class="client-photo client-photo-wide"><img src="assets/business-english.jpg" alt="Mike Hammer Teacher, clases de inglés empresarial"></figure>
-        <article><b>Conversaciones reales</b><span>Practica situaciones cotidianas y profesionales para comunicarte con naturalidad.</span></article>
-        <article><b>Fluidez y confianza</b><span>Habla con más seguridad, claridad y mejor pronunciación.</span></article>
-        <article><b>Aprendizaje personalizado</b><span>Clases dinámicas adaptadas a tus objetivos, intereses y nivel.</span></article>
-        <article><b>Material práctico</b><span>Actividades modernas para trabajar comprensión, conversación y vocabulario.</span></article>
+      <section class="experience section">
+        <figure class="experience-image reveal"><img src="assets/hero.png" alt="Clase de inglés online desde casa" loading="lazy"></figure>
+        <div class="experience-copy reveal">
+          <div class="section-tag"><span>05</span> The experience</div>
+          <p class="eyebrow dark">Designed around real life</p>
+          <h2>Tu clase debe caber en tu vida. Y servirte <em>fuera de ella.</em></h2>
+          <div class="experience-grid">
+            <article><b>01</b><h3>Conversaciones reales</h3><p>Situaciones cotidianas y profesionales para comunicarte con naturalidad.</p></article>
+            <article><b>02</b><h3>Confianza al hablar</h3><p>Más seguridad, claridad y una pronunciación que se trabaja practicando.</p></article>
+            <article><b>03</b><h3>Aprendizaje personal</h3><p>Clases dinámicas adaptadas a tu objetivo, tus intereses y tu nivel.</p></article>
+            <article><b>04</b><h3>Material práctico</h3><p>Actividades para trabajar comprensión, conversación y vocabulario.</p></article>
+          </div>
+        </div>
       </section>
 
-      <section class="faq" id="preguntas">
-        <p class="section-label">06 / Preguntas frecuentes</p>
-        <details open><summary>¿Las clases son online?</summary><span>Sí. Todas las clases son en línea.</span></details>
-        <details><summary>¿Qué tipo de inglés enseña Mike?</summary><span>Inglés general, conversación e inglés de negocios para situaciones cotidianas y profesionales.</span></details>
-        <details><summary>¿Hay clases para todos los niveles?</summary><span>Sí. Mike trabaja con alumnos principiantes, intermedios y avanzados.</span></details>
-        <details><summary>¿Las clases son individuales o grupales?</summary><span>Existen opciones individuales y para grupos. Consulta por WhatsApp para conocer la modalidad adecuada.</span></details>
+      <section class="faq section" id="preguntas">
+        <div class="faq-heading reveal">
+          <div class="section-tag"><span>06</span> FAQ</div>
+          <h2>Antes de<br><em>empezar.</em></h2>
+        </div>
+        <div class="faq-list reveal">
+          <details open><summary><span>01</span>¿Las clases son online?<i aria-hidden="true"></i></summary><p>Sí. Todas las clases se realizan en línea.</p></details>
+          <details><summary><span>02</span>¿Qué tipo de inglés enseña Mike?<i aria-hidden="true"></i></summary><p>Inglés general, conversación e inglés de negocios para situaciones cotidianas y profesionales.</p></details>
+          <details><summary><span>03</span>¿Hay clases para todos los niveles?<i aria-hidden="true"></i></summary><p>Sí. Mike trabaja con alumnos principiantes, intermedios y avanzados.</p></details>
+          <details><summary><span>04</span>¿Las clases son individuales o grupales?<i aria-hidden="true"></i></summary><p>Existen opciones individuales y para grupos. Escríbele a Mike para conocer la modalidad adecuada para ti.</p></details>
+        </div>
       </section>
 
       <section class="contact" id="contacto">
-        <p class="section-label">07 / Contacto</p>
-        <h2>Mejora tu inglés,<br>abre más <em>oportunidades.</em></h2>
-        <p>Escribe ahora y cuéntale a Mike qué necesitas mejorar.</p>
-        <a class="contact-link" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Hablemos por WhatsApp <span>↗</span></a>
+        <div class="contact-orbit" aria-hidden="true"><span>LET'S TALK · LET'S TALK · </span></div>
+        <div class="contact-content reveal">
+          <p class="eyebrow">Your next conversation starts here</p>
+          <h2>Haz que tu inglés<br><em>trabaje para ti.</em></h2>
+          <p>Cuéntale a Mike qué quieres mejorar y encuentra el enfoque indicado para comenzar.</p>
+          <a class="button button-primary" href="https://wa.me/5215655147745?text=Hola%20Mike%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20ingl%C3%A9s." target="_blank" rel="noreferrer">Escribir por WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="brand" href="#inicio">mike<span>english</span></a>
-      <p>Clases de inglés empresarial online</p>
+      <a class="brand" href="#inicio" aria-label="Mike Hammer, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span class="brand-copy"><strong>Mike Hammer</strong><small>English mentoring</small></span>
+      </a>
+      <p>English for life &amp; business</p>
       <p>© <span id="year"></span> Mike Hammer</p>
     </footer>
 
