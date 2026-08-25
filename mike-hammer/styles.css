@@ -213,6 +213,24 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .level-track strong { margin-top: auto; font: 500 19px var(--serif); }
 .level-track span { margin-top: 7px; color: rgba(255,255,255,.45); font-size: 9px; }
 
+.certification { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(55px, 8vw, 120px); align-items: center; background: var(--gold-light); }
+.certification-media { position: relative; min-height: 660px; }
+.certification-media figure { height: 100%; margin: 0; overflow: hidden; background: #eee9df; }
+.certification-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; filter: saturate(.86); }
+.certification-media > span { position: absolute; right: 22px; bottom: 22px; color: rgba(255,255,255,.86); font: 500 9px var(--mono); letter-spacing: .11em; text-transform: uppercase; text-shadow: 0 1px 12px rgba(0,0,0,.45); }
+.certification-copy { align-self: center; max-width: 680px; }
+.certification-copy .section-tag { margin-bottom: 68px; color: rgba(7,23,34,.62); }
+.certification-copy .section-tag span { color: var(--navy); }
+.certification-copy .eyebrow { color: #57431f; }
+.certification-copy h2 em { color: var(--ivory); }
+.certification-lead { max-width: 620px; margin-top: 30px; color: rgba(7,23,34,.78); font: 500 clamp(17px, 1.45vw, 22px)/1.55 var(--serif); }
+.certification-mark { display: flex; align-items: center; gap: 22px; margin: 34px 0 32px; padding: 16px 0; border-top: 1px solid rgba(7,23,34,.28); border-bottom: 1px solid rgba(7,23,34,.28); }
+.certification-mark strong { font: 500 25px var(--serif); letter-spacing: -.03em; }
+.certification-mark strong span { color: #97713a; padding: 0 5px; }
+.certification-mark > span { color: rgba(7,23,34,.56); font: 500 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.button-dark { background: var(--navy); color: #fff; }
+.button-dark:hover { background: var(--navy-soft); }
+
 .experience { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(55px,8vw,120px); background: var(--ivory); }
 .experience-image { min-height: 720px; overflow: hidden; }
 .experience-image img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
@@ -280,6 +298,8 @@ footer p:last-child { justify-self: end; }
   .teacher-portrait { padding-left: 30px; }
   .portrait-caption { left: 55px; }
   .teacher-content { padding-inline: 55px 30px; }
+  .certification { gap: 50px; }
+  .certification-media { min-height: 560px; }
   .teacher-pillars { grid-template-columns: 1fr; }
   .teacher-pillars div, .teacher-pillars div + div { min-height: 55px; flex-direction: row; align-items: center; padding: 12px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
   .level-track { grid-template-columns: repeat(3,1fr); }
@@ -325,6 +345,11 @@ footer p:last-child { justify-self: end; }
   .teacher-portrait figure::after { inset: 22px; }
   .portrait-caption { left: 42px; right: 42px; bottom: 42px; }
   .teacher-content { padding: 75px 22px 90px; }
+  .certification { grid-template-columns: 1fr; gap: 52px; }
+  .certification-media { min-height: 520px; }
+  .certification-copy { max-width: none; }
+  .certification-copy .section-tag { margin-bottom: 55px; }
+  .certification-mark { align-items: flex-start; flex-direction: column; gap: 8px; }
   .teacher-content .section-tag { margin-bottom: 60px; }
   .method-heading .section-tag, .levels-top .section-tag, .experience-copy .section-tag, .faq-heading .section-tag { margin-bottom: 55px; }
   .method-list li { min-height: 135px; grid-template-columns: 50px 1fr; }
