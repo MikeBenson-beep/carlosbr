@@ -1,0 +1,2 @@
+document.getElementById('year').textContent = String(new Date().getFullYear());
+document.getElementById('contact-form').addEventListener('submit', (event) => { event.preventDefault(); const name = document.getElementById('name').value.trim(); const zone = document.getElementById('zone').value.trim(); const need = document.getElementById('need').value.trim(); const text = `Hola Servicio JCM, soy ${name}. Estoy en ${zone}. Necesito: ${need}`; window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer'); });
