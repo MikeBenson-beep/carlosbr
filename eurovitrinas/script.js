@@ -1,0 +1,11 @@
+const header = document.getElementById("header");
+const menuButton = document.querySelector(".menu-toggle");
+const form = document.getElementById("contact-form");
+const note = document.getElementById("form-note");
+document.getElementById("year").textContent = String(new Date().getFullYear());
+menuButton.addEventListener("click", () => { const open = header.classList.toggle("open"); document.body.classList.toggle("menu-open", open); menuButton.setAttribute("aria-expanded", String(open)); menuButton.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú"); });
+document.querySelectorAll("#nav a").forEach((link) => link.addEventListener("click", () => { header.classList.remove("open"); document.body.classList.remove("menu-open"); menuButton.setAttribute("aria-expanded", "false"); }));
+document.querySelectorAll("[data-service]").forEach((link) => link.addEventListener("click", () => { document.getElementById("service").value = link.dataset.service.includes("Cámara") ? "Cámara de frío" : link.dataset.service.includes("Vitrina") ? "Vitrina comercial" : "Proyecto personalizado"; }));
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); } }), { threshold: 0.12 });
+document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+form.addEventListener("submit", (event) => { event.preventDefault(); const data = new FormData(form); const message = ["Hola, quiero consultar por una solución de refrigeración.", `Nombre: ${data.get("name")}`, `Negocio: ${data.get("business")}`, `Ciudad: ${data.get("city")}`, `Necesidad: ${data.get("service")}`, `Detalle: ${data.get("message") || "Por confirmar"}`].join("\n"); note.textContent = "Solicitud lista. Abriendo WhatsApp para compartirla…"; window.open(`https://wa.me/593987947859?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer"); });
