@@ -1,3 +1,3 @@
-# Juan
+# Ecuadorian Stuff
 
-Asesoría agrícola urbana en Quito: poda, fumigaciones de frutales y fertilización.
+Landing page para diseño gráfico y cultura pop desde Ecuador.
