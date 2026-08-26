@@ -45,6 +45,8 @@ button { font: inherit; }
   gap: clamp(28px, 5vw, 80px);
   padding: 0 clamp(24px, 4.7vw, 76px);
   border-bottom: 1px solid rgba(255,255,255,.15);
+  background: linear-gradient(180deg, rgba(4,17,27,.78), rgba(4,17,27,.42));
+  backdrop-filter: blur(12px);
   color: #fff;
   transition: background .35s ease, height .35s ease, box-shadow .35s ease;
 }
@@ -81,7 +83,7 @@ footer .brand-logo { width: 220px; }
 .hero-image { object-fit: cover; object-position: center; animation: heroZoom 18s ease-out both; }
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(4,17,27,.98) 0%, rgba(4,17,27,.89) 37%, rgba(4,17,27,.30) 72%, rgba(4,17,27,.14) 100%),
+    linear-gradient(90deg, rgba(4,17,27,.98) 0%, rgba(4,17,27,.91) 37%, rgba(4,17,27,.56) 72%, rgba(4,17,27,.42) 100%),
     linear-gradient(0deg, rgba(4,17,27,.64), transparent 48%);
 }
 .hero-grid { position: relative; z-index: 1; width: 100%; display: grid; grid-template-columns: minmax(0,1.35fr) minmax(260px,.65fr); align-items: end; gap: 8vw; padding: clamp(146px, 17vh, 190px) var(--pad) clamp(82px, 11vh, 112px); }
@@ -100,11 +102,11 @@ footer .brand-logo { width: 220px; }
 .button-primary:hover { background: #ead096; }
 .button-ghost { border-color: rgba(255,255,255,.34); color: #fff; }
 .button-ghost:hover { background: rgba(255,255,255,.08); }
-.hero-note { align-self: end; max-width: 320px; margin-left: auto; padding: 24px 0 2px; border-top: 1px solid rgba(255,255,255,.37); }
+.hero-note { align-self: end; max-width: 320px; margin-left: auto; padding: 24px 0 2px; border-top: 1px solid rgba(255,255,255,.55); text-shadow: 0 2px 18px rgba(0,0,0,.3); }
 .hero-note-index { color: var(--gold-light); font: 500 9px var(--mono); letter-spacing: .12em; }
 .hero-note p { margin: 18px 0 24px; color: rgba(255,255,255,.76); font: 500 14px/1.7 var(--serif); }
 .hero-note div { display: flex; flex-wrap: wrap; gap: 6px; }
-.hero-note div span { padding: 7px 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; color: rgba(255,255,255,.67); font: 500 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.hero-note div span { padding: 7px 10px; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; color: rgba(255,255,255,.86); font: 500 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .scroll-cue { position: absolute; z-index: 2; right: clamp(24px,4.7vw,76px); bottom: 27px; display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.55); font: 500 8px var(--mono); letter-spacing: .14em; text-decoration: none; text-transform: uppercase; writing-mode: vertical-rl; }
 .scroll-cue span { width: 1px; height: 38px; background: linear-gradient(var(--gold), transparent); }
 @keyframes heroZoom { from { transform: scale(1.04); } to { transform: scale(1); } }
