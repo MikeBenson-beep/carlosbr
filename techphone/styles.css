@@ -18,3 +18,6 @@ footer{display:grid;grid-template-columns:1fr 1fr;min-height:310px;padding:75px 
 .hero-visual{padding:clamp(28px,5vw,72px) clamp(24px,4vw,60px) clamp(28px,5vw,72px) 0;background:var(--night)}
 .hero-visual img{object-fit:contain;object-position:center}
 @media(max-width:900px){.hero-visual{padding:24px 24px 0}.hero-visual img{height:100%;object-fit:contain}}
+
+.hero-meta{margin-top:26px;padding-bottom:4px}
+@media(max-width:900px){.hero-meta{margin-top:22px;padding-bottom:8px}}
