@@ -1,0 +1,1 @@
+.intro{grid-template-columns:.45fr 1fr .75fr;align-items:center}.intro-photo{align-self:center}@media(max-width:800px){.intro{display:block}.intro-photo{display:block}}
