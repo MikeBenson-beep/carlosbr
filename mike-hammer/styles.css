@@ -259,13 +259,16 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .companies-heading h2 em { color: var(--gold-light); }
 .companies-intro { max-width: 580px; margin-top: 23px; color: rgba(255,255,255,.7); font-size: 15px; }
 .company-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border-top: 1px solid rgba(7,23,34,.23); }
-.company-list span { min-height: 94px; display: flex; align-items: center; padding: 20px 24px 20px 0; border-bottom: 1px solid rgba(7,23,34,.23); color: var(--navy); font: 600 clamp(18px,1.8vw,26px)/1.15 var(--serif); }
-.company-list span:nth-child(odd) { border-right: 1px solid rgba(7,23,34,.23); }
-.company-list span:nth-child(even) { padding-left: 24px; }
-.company-list span:last-child { grid-column: 1 / -1; border-right: 0; }
+.company-item { min-height: 94px; display: flex; align-items: center; gap: 15px; padding: 20px 24px 20px 0; border-bottom: 1px solid rgba(7,23,34,.23); color: var(--navy); font: 600 clamp(18px,1.8vw,26px)/1.15 var(--serif); }
+.company-item:nth-child(odd) { border-right: 1px solid rgba(7,23,34,.23); }
+.company-item:nth-child(even) { padding-left: 24px; }
+.company-item:last-child { grid-column: 1 / -1; border-right: 0; }
+.company-logo { width: 42px; height: 34px; flex: 0 0 42px; display: grid; place-items: center; padding: 5px; border: 1px solid rgba(255,255,255,.18); border-radius: 4px; background: rgba(255,255,255,.94); }
+.company-logo img { width: 100%; height: 100%; object-fit: contain; }
+.company-name { min-width: 0; }
 .teacher-companies .company-list { border-top-color: rgba(255,255,255,.2); }
-.teacher-companies .company-list span { border-bottom-color: rgba(255,255,255,.2); color: #fff; }
-.teacher-companies .company-list span:nth-child(odd) { border-right-color: rgba(255,255,255,.2); }
+.teacher-companies .company-item { border-bottom-color: rgba(255,255,255,.2); color: #fff; }
+.teacher-companies .company-item:nth-child(odd) { border-right-color: rgba(255,255,255,.2); }
 
 .faq { display: grid; grid-template-columns: .7fr 1.3fr; gap: 9vw; background: var(--paper); }
 .faq-heading h2 em { color: #96703a; }
@@ -390,8 +393,9 @@ footer p:last-child { justify-self: end; }
   .experience-grid article:nth-child(even) { padding-left: 0; }
   .teacher-companies { padding-top: 48px; }
   .company-list { grid-template-columns: 1fr; }
-  .teacher-companies .company-list span { min-height: 72px; padding: 16px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.2); }
-  .company-list span:last-child { grid-column: auto; }
+  .teacher-companies .company-item, .teacher-companies .company-item:nth-child(even) { min-height: 72px; padding: 16px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.2); }
+  .company-item:last-child { grid-column: auto; }
+  .company-logo { width: 38px; height: 32px; flex-basis: 38px; }
   .faq { gap: 42px; }
   .contact { min-height: 560px; padding: 64px 22px; }
   .contact-orbit { width: 125vw; }
