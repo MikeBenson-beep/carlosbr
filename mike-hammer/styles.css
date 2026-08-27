@@ -351,6 +351,8 @@ footer p:last-child { justify-self: end; }
   .services { grid-template-columns: 1fr; padding: 0 22px 62px; }
   .service-card, .service-card:first-child { grid-column: auto; min-height: 540px; }
   .service-card, .service-card:first-child { grid-template-rows: 235px 1fr; }
+  .service-card figure { height: 235px; }
+  .service-content { z-index: 1; background: var(--navy-soft); }
   .levels-reference { grid-template-columns: 1fr; gap: 18px; margin-left: 0; }
   .levels-reference figure { height: 320px; }
   .levels-reference div { padding: 8px 10px 18px; }
@@ -376,7 +378,7 @@ footer p:last-child { justify-self: end; }
   .experience-grid article:nth-child(even) { padding-left: 0; }
   .teacher-companies { padding-top: 48px; }
   .company-list { grid-template-columns: 1fr; }
-  .company-list span, .company-list span:nth-child(even) { min-height: 72px; padding: 16px 0; border-right: 0; }
+  .teacher-companies .company-list span { min-height: 72px; padding: 16px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.2); }
   .company-list span:last-child { grid-column: auto; }
   .faq { gap: 42px; }
   .contact { min-height: 560px; padding: 64px 22px; }
