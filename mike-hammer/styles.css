@@ -103,11 +103,11 @@ footer .brand-logo { display: block; width: 220px; height: auto; }
 .hero h1 { max-width: 830px; font: 500 clamp(58px, 7.25vw, 112px)/.88 var(--serif); letter-spacing: -.065em; }
 .hero h1 em, h2 em { color: var(--gold-light); font-weight: 500; }
 .hero-title-line { display: block; }
-.js .hero-title-line { opacity: 0; filter: blur(8px); transform: translateX(-76px); }
-.js .hero-title-ready .hero-title-line { animation: heroTitleLineIn 1.25s cubic-bezier(.16,.8,.25,1) both; }
+.js .hero-title-line { opacity: 0; transform: translateY(24px); }
+.js .hero-title-ready .hero-title-line { animation: heroTitleLineIn 1.1s cubic-bezier(.22,1,.36,1) both; }
 .js .hero-title-ready .hero-title-line:nth-child(1) { animation-delay: .08s; }
-.js .hero-title-ready .hero-title-line:nth-child(2) { animation-delay: .26s; }
-.js .hero-title-ready .hero-title-line:nth-child(3) { animation-delay: .44s; }
+.js .hero-title-ready .hero-title-line:nth-child(2) { animation-delay: .18s; }
+.js .hero-title-ready .hero-title-line:nth-child(3) { animation-delay: .28s; }
 .hero-copy { max-width: 580px; margin-top: 30px; color: rgba(255,255,255,.73); font-size: clamp(15px, 1.2vw, 18px); line-height: 1.7; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 56px; padding: 0 22px; border: 1px solid transparent; font-size: 11px; font-weight: 700; text-decoration: none; transition: transform .25s ease, background .25s ease, color .25s ease; }
@@ -125,7 +125,7 @@ footer .brand-logo { display: block; width: 220px; height: auto; }
 .scroll-cue { position: absolute; z-index: 2; right: clamp(24px,4.7vw,76px); bottom: 27px; display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.55); font: 500 8px var(--mono); letter-spacing: .14em; text-decoration: none; text-transform: uppercase; writing-mode: vertical-rl; }
 .scroll-cue span { width: 1px; height: 38px; background: linear-gradient(var(--gold), transparent); }
 @keyframes heroZoom { from { transform: scale(1.04); } to { transform: scale(1); } }
-@keyframes heroTitleLineIn { from { opacity: 0; filter: blur(8px); transform: translateX(-76px); } to { opacity: 1; filter: blur(0); transform: translateX(0); } }
+@keyframes heroTitleLineIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes flagFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 
 .signature-strip { min-height: 70px; display: flex; align-items: center; justify-content: center; gap: clamp(18px,3vw,45px); padding: 16px var(--pad); overflow: hidden; background: var(--gold); color: var(--navy); }
