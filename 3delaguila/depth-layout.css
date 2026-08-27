@@ -1,1 +1,1 @@
-.intro{grid-template-columns:.45fr 1fr .75fr;align-items:center}.intro-photo{align-self:center}@media(max-width:800px){.intro{display:block}.intro-photo{display:block}}
+.intro{grid-template-columns:.45fr 1fr .75fr;align-items:center}.intro-photo{align-self:center}.logo-real{display:block;width:112px;height:54px;object-fit:contain;background:#050505;border-radius:6px}.logo-footer .logo-real{width:160px;height:78px}@media(max-width:800px){.intro{display:block}.intro-photo{display:block}.logo-real{width:94px;height:46px}}
