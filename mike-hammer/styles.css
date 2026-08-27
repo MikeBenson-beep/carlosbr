@@ -102,7 +102,12 @@ footer .brand-logo { display: block; width: 220px; height: auto; }
 .eyebrow.dark { color: #8b6c32; }
 .hero h1 { max-width: 830px; font: 500 clamp(58px, 7.25vw, 112px)/.88 var(--serif); letter-spacing: -.065em; }
 .hero h1 em, h2 em { color: var(--gold-light); font-weight: 500; }
-.js .hero h1 { animation: heroTitleIn 1.05s cubic-bezier(.16,.8,.25,1) .18s both; }
+.hero-title-line { display: block; }
+.js .hero-title-line { opacity: 0; filter: blur(8px); transform: translateX(-76px); }
+.js .hero-title-ready .hero-title-line { animation: heroTitleLineIn 1.25s cubic-bezier(.16,.8,.25,1) both; }
+.js .hero-title-ready .hero-title-line:nth-child(1) { animation-delay: .08s; }
+.js .hero-title-ready .hero-title-line:nth-child(2) { animation-delay: .26s; }
+.js .hero-title-ready .hero-title-line:nth-child(3) { animation-delay: .44s; }
 .hero-copy { max-width: 580px; margin-top: 30px; color: rgba(255,255,255,.73); font-size: clamp(15px, 1.2vw, 18px); line-height: 1.7; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 56px; padding: 0 22px; border: 1px solid transparent; font-size: 11px; font-weight: 700; text-decoration: none; transition: transform .25s ease, background .25s ease, color .25s ease; }
@@ -120,7 +125,7 @@ footer .brand-logo { display: block; width: 220px; height: auto; }
 .scroll-cue { position: absolute; z-index: 2; right: clamp(24px,4.7vw,76px); bottom: 27px; display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.55); font: 500 8px var(--mono); letter-spacing: .14em; text-decoration: none; text-transform: uppercase; writing-mode: vertical-rl; }
 .scroll-cue span { width: 1px; height: 38px; background: linear-gradient(var(--gold), transparent); }
 @keyframes heroZoom { from { transform: scale(1.04); } to { transform: scale(1); } }
-@keyframes heroTitleIn { from { opacity: 0; transform: translateY(52px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes heroTitleLineIn { from { opacity: 0; filter: blur(8px); transform: translateX(-76px); } to { opacity: 1; filter: blur(0); transform: translateX(0); } }
 @keyframes flagFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 
 .signature-strip { min-height: 70px; display: flex; align-items: center; justify-content: center; gap: clamp(18px,3vw,45px); padding: 16px var(--pad); overflow: hidden; background: var(--gold); color: var(--navy); }
@@ -178,8 +183,10 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .text-link { width: fit-content; padding-bottom: 8px; border-bottom: 1px solid var(--gold); color: var(--gold-light); font-size: 10px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
 .text-link span { margin-left: 10px; font-size: 16px; }
 .teacher-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 30px; }
-.linkedin-link { width: fit-content; color: rgba(255,255,255,.76); font-size: 10px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
-.linkedin-link span { margin-left: 8px; color: var(--gold-light); font-size: 15px; }
+.linkedin-link { width: fit-content; display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,.76); font-size: 10px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
+.linkedin-link img { width: 17px; height: 17px; }
+.linkedin-link .linkedin-label { color: inherit; font-size: inherit; }
+.linkedin-link .linkedin-arrow { margin-left: 2px; color: var(--gold-light); font-size: 15px; }
 .linkedin-link:hover { color: #fff; }
 
 .method { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; background: var(--gold); }
@@ -314,7 +321,9 @@ footer p:last-child { justify-self: end; }
   .certification { gap: 50px; }
   .certification-media { height: 480px; min-height: 0; }
   .teacher-pillars { grid-template-columns: 1fr; }
-  .teacher-pillars div, .teacher-pillars div + div { min-height: 55px; flex-direction: row; align-items: center; padding: 12px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .teacher-pillars div, .teacher-pillars div + div { min-height: 64px; display: grid; grid-template-columns: 12px minmax(0,1fr); align-items: center; gap: 12px; padding: 12px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .teacher-pillars b { justify-self: start; }
+  .teacher-pillars span { width: 100%; line-height: 1.5; text-align: left; }
   .level-track { grid-template-columns: repeat(3,1fr); }
   .level-track article:nth-child(3) { border-right: 0; }
   .level-track article:nth-child(-n+3) { border-bottom: 1px solid rgba(255,255,255,.17); }

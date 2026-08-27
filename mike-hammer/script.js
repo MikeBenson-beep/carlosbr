@@ -2,6 +2,13 @@ const year = document.getElementById("year");
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.getElementById("site-nav");
+const heroTitle = document.getElementById("hero-title");
+
+if (heroTitle) {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => heroTitle.classList.add("hero-title-ready"));
+  });
+}
 
 if (year) year.textContent = String(new Date().getFullYear());
 
