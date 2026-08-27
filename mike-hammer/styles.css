@@ -335,7 +335,7 @@ footer p:last-child { justify-self: end; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
   .menu-button[aria-expanded="true"] span:last-child { transform: translateY(-3px) rotate(-45deg); }
   .hero { min-height: 720px; max-height: none; }
-  .hero-image { object-position: 62% center; }
+  .hero-image { object-position: 78% center; }
   .hero-shade { background: linear-gradient(90deg, rgba(4,17,27,.88), rgba(4,17,27,.34)), linear-gradient(0deg, rgba(4,17,27,.78), transparent 55%); }
   .hero-flags { top: 90px; right: 20px; gap: 7px; }
   .hero-flags span { width: 34px; height: 34px; }
@@ -343,8 +343,9 @@ footer p:last-child { justify-self: end; }
   .hero h1 { font-size: clamp(52px,16vw,82px); }
   .hero-copy { max-width: 450px; font-size: 16px; }
   .scroll-cue { display: none; }
-  .signature-strip { justify-content: flex-start; overflow: hidden; }
-  .signature-strip p:nth-of-type(n+2), .signature-strip i:nth-of-type(n+2) { display: none; }
+  .signature-strip { justify-content: flex-start; gap: 24px; overflow-x: auto; overflow-y: hidden; padding-inline: 22px; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .signature-strip::-webkit-scrollbar { display: none; }
+  .signature-strip p { flex: 0 0 auto; scroll-snap-align: center; }
   .section { padding: 62px 22px; }
   .intro, .method, .levels-top, .faq { grid-template-columns: 1fr; gap: 45px; }
   .intro-copy > p:last-child { margin-inline: auto; }
