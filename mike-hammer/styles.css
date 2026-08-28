@@ -192,7 +192,7 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 
 .method { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; background: var(--steel-blue); }
 .method-heading .eyebrow { color: #57431f; }
-.method-heading h2 em { color: var(--ivory); }
+.method-heading h2 em { color: var(--gold-light); }
 .method-heading > p:last-child { max-width: 420px; margin-top: 25px; color: rgba(7,23,34,.72); font-size: 15px; }
 .method-list { align-self: end; margin: 0; padding: 0; list-style: none; }
 .method-list li { position: relative; display: grid; grid-template-columns: 70px 1fr auto; gap: 12px; align-items: start; min-height: 150px; padding: 27px 0; border-top: 1px solid rgba(7,23,34,.28); }
@@ -229,7 +229,7 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .certification-media > span { position: absolute; right: 22px; bottom: 22px; color: rgba(255,255,255,.86); font: 500 9px var(--mono); letter-spacing: .11em; text-transform: uppercase; text-shadow: 0 1px 12px rgba(0,0,0,.45); }
 .certification-copy { align-self: center; max-width: 680px; }
 .certification-copy .eyebrow { color: #57431f; }
-.certification-copy h2 em { color: var(--ivory); }
+.certification-copy h2 em { color: var(--gold-light); }
 .certification-lead { max-width: 620px; margin-top: 30px; color: rgba(7,23,34,.78); font: 500 clamp(17px, 1.45vw, 22px)/1.55 var(--serif); }
 .certification-mark { display: flex; align-items: center; gap: 22px; margin: 34px 0 32px; padding: 16px 0; border-top: 1px solid rgba(7,23,34,.28); border-bottom: 1px solid rgba(7,23,34,.28); }
 .certification-mark strong { font: 500 25px var(--serif); letter-spacing: -.03em; }
