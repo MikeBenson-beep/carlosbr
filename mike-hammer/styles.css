@@ -6,6 +6,7 @@
   --ivory: #fbf9f4;
   --gold: #d5b878;
   --gold-light: #ead8ac;
+  --steel-blue: #6287a3;
   --line: rgba(16, 35, 47, .18);
   --muted: #68747a;
   --pad: clamp(24px, 7vw, 112px);
@@ -128,7 +129,7 @@ footer .brand-logo { display: block; width: 220px; height: auto; }
 @keyframes heroTitleLineIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes flagFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 
-.signature-strip { min-height: 70px; display: flex; align-items: center; justify-content: center; gap: clamp(18px,3vw,45px); padding: 16px var(--pad); overflow: hidden; background: var(--gold); color: var(--navy); }
+.signature-strip { min-height: 70px; display: flex; align-items: center; justify-content: center; gap: clamp(18px,3vw,45px); padding: 16px var(--pad); overflow: hidden; background: var(--steel-blue); color: var(--navy); }
 .signature-strip p { white-space: nowrap; font: 500 clamp(10px,1vw,12px) var(--mono); letter-spacing: .11em; text-transform: uppercase; }
 .signature-strip i { width: 4px; height: 4px; flex: 0 0 auto; border-radius: 50%; background: currentColor; }
 .section { padding: clamp(68px, 7vw, 110px) var(--pad); }
@@ -189,7 +190,7 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .linkedin-link .linkedin-arrow { margin-left: 2px; color: var(--gold-light); font-size: 15px; }
 .linkedin-link:hover { color: #fff; }
 
-.method { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; background: var(--gold); }
+.method { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; background: var(--steel-blue); }
 .method-heading .eyebrow { color: #57431f; }
 .method-heading h2 em { color: var(--ivory); }
 .method-heading > p:last-child { max-width: 420px; margin-top: 25px; color: rgba(7,23,34,.72); font-size: 15px; }
@@ -221,7 +222,7 @@ h2 { font: 500 clamp(44px,5.5vw,80px)/1 var(--serif); letter-spacing: -.055em; }
 .level-track strong { margin-top: auto; font: 500 19px var(--serif); }
 .level-track span { margin-top: 7px; color: rgba(255,255,255,.55); font-size: 11px; }
 
-.certification { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(55px, 8vw, 120px); align-items: center; padding-block: clamp(32px, 3vw, 48px); background: var(--gold-light); }
+.certification { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(55px, 8vw, 120px); align-items: center; padding-block: clamp(32px, 3vw, 48px); background: var(--steel-blue); }
 .certification-media { position: relative; height: 500px; min-height: 0; }
 .certification-media figure { height: 100%; margin: 0; overflow: hidden; background: #eee9df; }
 .certification-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; filter: saturate(.86); }
