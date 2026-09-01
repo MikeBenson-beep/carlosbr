@@ -20,7 +20,7 @@ toggle?.addEventListener('click', () => {
 
 nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
-window.addEventListener('resize', () => { if (window.innerWidth > 860) closeMenu(); });
+window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu(); });
 
 const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 12);
 updateHeader();
