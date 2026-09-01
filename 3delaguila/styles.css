@@ -69,6 +69,19 @@ button { font: inherit; }
 .service-copy a { padding-bottom: 5px; border-bottom: 1px solid var(--ink); font-size: 12px; font-weight: 500; text-decoration: none; }
 .service-copy a:hover { border-color: var(--accent); color: var(--accent); }
 
+.parcel-collection { background: var(--surface); }
+.parcel-heading { display: grid; grid-template-columns: .3fr 1.15fr .55fr; gap: 5vw; align-items: start; margin-bottom: clamp(55px, 7vw, 90px); }
+.parcel-heading .section-label { margin: 8px 0 0; }
+.parcel-heading h2 { max-width: 900px; margin: 0; font-size: clamp(48px, 5.5vw, 82px); font-weight: 400; letter-spacing: -.055em; line-height: 1.02; }
+.parcel-heading > p:last-child { margin: 8px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.parcel-sizes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding-top: 14px; border-top: 1px solid var(--ink); }
+.parcel-sizes figure { min-width: 0; margin: 0; }
+.parcel-sizes img { width: 100%; height: auto; aspect-ratio: 1; display: block; object-fit: cover; background: #e4e4df; }
+.parcel-sizes figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0 14px; border-bottom: 1px solid var(--line); }
+.parcel-sizes figcaption span { color: var(--muted); font-size: 10px; }
+.parcel-sizes figcaption strong { font-size: 12px; font-weight: 500; }
+.parcel-note { max-width: 620px; margin: 38px 0 0 auto; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
 .information { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9vw; background: var(--surface); }
 .information-heading .section-label, .local-heading .section-label, .faq-heading .section-label, .contact-heading .section-label { margin-bottom: 32px; }
 .information-heading h2 { font-size: clamp(48px, 5.5vw, 82px); }
@@ -161,6 +174,10 @@ button { font: inherit; }
   .service figure { min-height: 0; }
   .information { grid-template-columns: 1fr; }
   .information-columns { margin-top: 30px; }
+  .parcel-heading { grid-template-columns: 1fr; }
+  .parcel-heading .section-label { margin-top: 0; }
+  .parcel-heading > p:last-child { max-width: 650px; }
+  .parcel-sizes { grid-template-columns: 1fr 1fr; }
   .local-heading { grid-template-columns: 1fr; }
   .local-heading .section-label { margin-top: 0; }
   .local-heading > p:last-child { max-width: 650px; }
@@ -187,6 +204,8 @@ button { font: inherit; }
   .service figure, .service-reverse figure { min-height: 0; }
   .service-copy h3 { font-size: 44px; }
   .information-columns { grid-template-columns: 1fr; gap: 42px; }
+  .parcel-sizes { grid-template-columns: 1fr; gap: 28px; }
+  .parcel-note { margin-left: 0; }
   .local-main-photo { height: 115vw; }
   .local-main-photo img { object-position: 52% center; }
   .local-gallery { display: block; }
