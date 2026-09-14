@@ -34,7 +34,7 @@ if ('IntersectionObserver' in window) {
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -48px' });
+  }, { threshold: 0.01, rootMargin: '80px 0px' });
   reveals.forEach((element) => observer.observe(element));
 } else {
   reveals.forEach((element) => element.classList.add('is-visible'));
