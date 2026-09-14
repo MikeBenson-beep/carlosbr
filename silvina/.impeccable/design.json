@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T16:59:38+03:00",
+  "title": "Design System: Estudio Jurídico Méndez Acosta",
+  "extensions": {
+    "colorMeta": {
+      "wine": {
+        "role": "primary",
+        "displayName": "Oxblood Annotation",
+        "canonical": "#581827",
+        "tonalRamp": ["oklch(15% 0.094 10.3)", "oklch(25% 0.094 10.3)", "oklch(35% 0.094 10.3)", "oklch(45% 0.094 10.3)", "oklch(55% 0.094 10.3)", "oklch(65% 0.094 10.3)", "oklch(80% 0.094 10.3)", "oklch(95% 0.094 10.3)"]
+      },
+      "wine-deep": {
+        "role": "primary",
+        "displayName": "Deep Oxblood Binding",
+        "canonical": "#2d0c14",
+        "tonalRamp": ["oklch(15% 0.055 8.1)", "oklch(25% 0.055 8.1)", "oklch(35% 0.055 8.1)", "oklch(45% 0.055 8.1)", "oklch(55% 0.055 8.1)", "oklch(65% 0.055 8.1)", "oklch(80% 0.055 8.1)", "oklch(95% 0.055 8.1)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal Legal Ink",
+        "canonical": "#151311",
+        "tonalRamp": ["oklch(15% 0.005 67.5)", "oklch(25% 0.005 67.5)", "oklch(35% 0.005 67.5)", "oklch(45% 0.005 67.5)", "oklch(55% 0.005 67.5)", "oklch(65% 0.005 67.5)", "oklch(80% 0.005 67.5)", "oklch(95% 0.005 67.5)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Ivory Document Paper",
+        "canonical": "#f6f2e9",
+        "tonalRamp": ["oklch(15% 0.013 86.8)", "oklch(25% 0.013 86.8)", "oklch(35% 0.013 86.8)", "oklch(45% 0.013 86.8)", "oklch(55% 0.013 86.8)", "oklch(65% 0.013 86.8)", "oklch(80% 0.013 86.8)", "oklch(95% 0.013 86.8)"]
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Handled Paper",
+        "canonical": "#e9e2d6",
+        "tonalRamp": ["oklch(15% 0.018 81.3)", "oklch(25% 0.018 81.3)", "oklch(35% 0.018 81.3)", "oklch(45% 0.018 81.3)", "oklch(55% 0.018 81.3)", "oklch(65% 0.018 81.3)", "oklch(80% 0.018 81.3)", "oklch(95% 0.018 81.3)"]
+      },
+      "sand": {
+        "role": "secondary",
+        "displayName": "Muted Brass",
+        "canonical": "#cbb181",
+        "tonalRamp": ["oklch(15% 0.070 82.5)", "oklch(25% 0.070 82.5)", "oklch(35% 0.070 82.5)", "oklch(45% 0.070 82.5)", "oklch(55% 0.070 82.5)", "oklch(65% 0.070 82.5)", "oklch(80% 0.070 82.5)", "oklch(95% 0.070 82.5)"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Filing Ink",
+        "canonical": "#675f58",
+        "tonalRamp": ["oklch(15% 0.015 63.7)", "oklch(25% 0.015 63.7)", "oklch(35% 0.015 63.7)", "oklch(45% 0.015 63.7)", "oklch(55% 0.015 63.7)", "oklch(65% 0.015 63.7)", "oklch(80% 0.015 63.7)", "oklch(95% 0.015 63.7)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Index Hairline",
+        "canonical": "rgba(21, 19, 17, 0.2)",
+        "tonalRamp": ["oklch(15% 0.005 67.5)", "oklch(25% 0.005 67.5)", "oklch(35% 0.005 67.5)", "oklch(45% 0.005 67.5)", "oklch(55% 0.005 67.5)", "oklch(65% 0.005 67.5)", "oklch(80% 0.005 67.5)", "oklch(95% 0.005 67.5)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Clean White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(35% 0 0)", "oklch(45% 0 0)", "oklch(55% 0 0)", "oklch(65% 0 0)", "oklch(80% 0 0)", "oklch(95% 0 0)"]
+      },
+      "sand-highlight": {
+        "role": "secondary",
+        "displayName": "Polished Brass Highlight",
+        "canonical": "#dfc89d",
+        "tonalRamp": ["oklch(15% 0.062 83.0)", "oklch(25% 0.062 83.0)", "oklch(35% 0.062 83.0)", "oklch(45% 0.062 83.0)", "oklch(55% 0.062 83.0)", "oklch(65% 0.062 83.0)", "oklch(80% 0.062 83.0)", "oklch(95% 0.062 83.0)"]
+      },
+      "focus-coral": {
+        "role": "secondary",
+        "displayName": "Coral Focus Mark",
+        "canonical": "#c58a73",
+        "tonalRamp": ["oklch(15% 0.080 42.2)", "oklch(25% 0.080 42.2)", "oklch(35% 0.080 42.2)", "oklch(45% 0.080 42.2)", "oklch(55% 0.080 42.2)", "oklch(65% 0.080 42.2)", "oklch(80% 0.080 42.2)", "oklch(95% 0.080 42.2)"]
+      },
+      "whatsapp-green": {
+        "role": "secondary",
+        "displayName": "WhatsApp Green",
+        "canonical": "#176b4d",
+        "tonalRamp": ["oklch(15% 0.092 163.9)", "oklch(25% 0.092 163.9)", "oklch(35% 0.092 163.9)", "oklch(45% 0.092 163.9)", "oklch(55% 0.092 163.9)", "oklch(65% 0.092 163.9)", "oklch(80% 0.092 163.9)", "oklch(95% 0.092 163.9)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero statements with editorial emphasis, capped at 96px." },
+      "headline": { "displayName": "Headline", "purpose": "Major section openings on paper and burgundy." },
+      "title": { "displayName": "Title", "purpose": "Practice names and prominent contact values." },
+      "body": { "displayName": "Body", "purpose": "Plain-language explanations and office details." },
+      "action": { "displayName": "Action", "purpose": "Buttons and direct consultation links." },
+      "label": { "displayName": "Docket Label", "purpose": "Tracked uppercase metadata, codes, and captions." }
+    },
+    "shadows": [
+      { "name": "header-float", "value": "0 8px 28px rgba(30, 26, 24, 0.08)", "purpose": "Separates the scrolled paper header from page content." },
+      { "name": "navigation-sheet", "value": "0 18px 30px rgba(30, 26, 24, 0.12)", "purpose": "Provides structural depth to the open mobile navigation." },
+      { "name": "mobile-conversion-lift", "value": "0 12px 32px rgba(0, 0, 0, 0.28)", "purpose": "Keeps the fixed WhatsApp action legible above changing content." }
+    ],
+    "motion": [
+      { "name": "state-quick", "value": "250ms ease", "purpose": "Button lift, link contrast, and outbound-arrow translation." },
+      { "name": "service-row", "value": "350ms ease", "purpose": "Introduces the translucent brass wash across a hovered practice record." },
+      { "name": "nav-standard", "value": "350ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Mobile navigation sheet opening and closing." },
+      { "name": "reveal-calm", "value": "700ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Single-pass section reveals from 26px below." },
+      { "name": "image-settle", "value": "10s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Slowly settles the refined hero office photograph from an enlarged, less saturated crop." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Collapses animations and transitions when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "compact-navigation", "value": "1050px" },
+      { "name": "single-column", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Consultation Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The principal WhatsApp action: a brass appointment marker on the charcoal cover.",
+      "html": "<a class=\"ds-button-primary\" href=\"#\">Consultar por WhatsApp <svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg></a>",
+      "css": ".ds-button-primary { min-height: 58px; display: inline-flex; justify-content: space-between; align-items: center; gap: 30px; padding: 0 24px; background: var(--sand, #cbb181); color: var(--ink, #151311); font: 600 13px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); text-decoration: none; transition: transform .25s ease, background .25s ease; } .ds-icon { width: 17px; height: 17px; flex: 0 0 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-button-primary:hover { transform: translateY(-3px); background: #dfc89d; } .ds-button-primary:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; } .ds-button-primary:active { transform: translateY(-1px); }"
+    },
+    {
+      "name": "Secondary Text Action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "A quiet on-page action with a single indexing rule.",
+      "html": "<a class=\"ds-text-action\" href=\"#\">Ver áreas de práctica <svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M10 4v11M5.5 10.5 10 15l4.5-4.5\"/></svg></a>",
+      "css": ".ds-text-action { display: inline-flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.42); color: #fff; font: 600 12px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); text-decoration: none; transition: border-color .25s ease; } .ds-icon { width: 17px; height: 17px; flex: 0 0 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-text-action:hover { border-color: #fff; } .ds-text-action:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; } .ds-text-action:active { opacity: .78; }"
+    },
+    {
+      "name": "Dossier Index Item",
+      "kind": "nav",
+      "refersTo": "text-action",
+      "description": "A functional uppercase practice-area index that opens a pre-addressed consultation.",
+      "html": "<a class=\"ds-index-item\" href=\"#\">Laboral <svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg></a>",
+      "css": ".ds-index-item { min-width: 180px; display: flex; justify-content: space-between; padding: 15px 14px 0 0; border-top: 1px solid rgba(255,255,255,.26); color: rgba(255,255,255,.68); font: 600 11px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); letter-spacing: .11em; text-decoration: none; text-transform: uppercase; transition: color .25s ease; } .ds-icon { width: 17px; height: 17px; flex: 0 0 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; } .ds-index-item:hover { color: #fff; } .ds-index-item:hover .ds-icon { transform: translate(3px,-3px); } .ds-index-item:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; } .ds-index-item:active { opacity: .78; }"
+    },
+    {
+      "name": "Practice Record",
+      "kind": "card",
+      "refersTo": "practice-row",
+      "description": "An unboxed, ruled dossier record for a legal practice area.",
+      "html": "<article class=\"ds-practice-record\"><span class=\"ds-practice-code\">LAB</span><h3>Derecho Laboral</h3><p>Consultas vinculadas con relaciones de trabajo y situaciones de carácter laboral.</p><a href=\"#\">Consultar <svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg></a></article>",
+      "css": ".ds-practice-record { display: grid; grid-template-columns: 70px minmax(190px,.8fr) minmax(220px,1fr) auto; gap: 24px; align-items: center; min-height: 164px; padding: 30px 20px 30px 0; border-top: 1px solid var(--line, rgba(21,19,17,.2)); border-bottom: 1px solid var(--line, rgba(21,19,17,.2)); background: var(--paper, #f6f2e9); color: var(--ink, #151311); transition: background .35s ease; } .ds-practice-record:hover { background: rgba(203,177,129,.11); } .ds-practice-code { color: var(--wine, #581827); font: 600 11px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); letter-spacing: .14em; } .ds-practice-record h3 { margin: 0; font: 400 36px/1 var(--display, 'Newsreader', Georgia, serif); letter-spacing: -.025em; transition: color .25s ease; } .ds-practice-record:hover h3 { color: var(--wine, #581827); } .ds-practice-record p { margin: 0; color: var(--muted, #675f58); font: 400 16px/1.65 var(--sans, 'DM Sans', Arial, sans-serif); } .ds-practice-record a { display: inline-flex; gap: 15px; padding: 12px 0; border-bottom: 1px solid var(--wine, #581827); color: var(--wine, #581827); font: 600 12px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); text-decoration: none; } .ds-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; } .ds-practice-record a:hover .ds-icon { transform: translate(3px,-3px); } .ds-practice-record a:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; }"
+    },
+    {
+      "name": "Scrolled Header",
+      "kind": "nav",
+      "description": "The compact paper header used after the visitor leaves the cover position.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-monogram\">SM</span><span>Estudio Jurídico<small>Méndez Acosta</small></span></a><nav><a href=\"#\">Áreas</a><a href=\"#\">El estudio</a><a href=\"#\">Contacto</a></nav></header>",
+      "css": ".ds-header { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 30px; padding: 0 28px; border-bottom: 1px solid rgba(30,26,24,.12); background: rgba(244,239,230,.97); color: var(--ink, #151311); box-shadow: 0 8px 28px rgba(30,26,24,.08); } .ds-brand { display: inline-flex; align-items: center; gap: 13px; color: inherit; font: 600 11px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); letter-spacing: .11em; text-decoration: none; text-transform: uppercase; } .ds-brand small { display: block; margin-top: 5px; font-size: 9px; font-weight: 400; letter-spacing: .17em; opacity: .68; } .ds-monogram { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; box-shadow: inset 0 0 0 4px rgba(255,255,255,.045); font: 500 16px/1 var(--display, 'Newsreader', Georgia, serif); letter-spacing: -.04em; } .ds-header nav { display: flex; gap: 30px; } .ds-header nav a { border-bottom: 1px solid transparent; color: inherit; font: 600 12px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); text-decoration: none; transition: border-color .25s ease; } .ds-header nav a:hover { border-color: currentColor; } .ds-header a:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; }"
+    },
+    {
+      "name": "Contact Channel Row",
+      "kind": "custom",
+      "refersTo": "contact-row",
+      "description": "A large ruled contact entry with archival label and editorial value.",
+      "html": "<a class=\"ds-contact-row\" href=\"#\"><span>WhatsApp</span><strong>+54 9 11 6417-9593</strong><svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg></a>",
+      "css": ".ds-contact-row { display: grid; grid-template-columns: 120px 1fr auto; gap: 20px; align-items: center; min-height: 112px; padding: 20px 4px; border-top: 1px solid rgba(255,255,255,.32); border-bottom: 1px solid rgba(255,255,255,.32); background: var(--ink, #151311); color: #fff; text-decoration: none; } .ds-contact-row span { color: var(--sand, #cbb181); font: 600 11px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); letter-spacing: .13em; text-transform: uppercase; } .ds-contact-row strong { font: 400 30px/1.1 var(--display, 'Newsreader', Georgia, serif); } .ds-icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; } .ds-contact-row:hover .ds-icon { transform: translate(4px,-4px); } .ds-contact-row:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; } .ds-contact-row:active { opacity: .82; }"
+    },
+    {
+      "name": "Mobile WhatsApp Bar",
+      "kind": "button",
+      "refersTo": "whatsapp-mobile",
+      "description": "The sole persistent mobile action, reserved for direct WhatsApp consultation.",
+      "html": "<a class=\"ds-whatsapp-mobile\" href=\"#\">WhatsApp <svg class=\"ds-icon\" aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg></a>",
+      "css": ".ds-whatsapp-mobile { min-height: 58px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; background: #176b4d; color: #fff; box-shadow: 0 12px 32px rgba(0,0,0,.28); font: 600 13px/1.2 var(--sans, 'DM Sans', Arial, sans-serif); text-decoration: none; transition: transform .25s ease, box-shadow .25s ease; } .ds-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-whatsapp-mobile:hover { transform: translateY(-2px); box-shadow: 0 15px 36px rgba(0,0,0,.32); } .ds-whatsapp-mobile:focus-visible { outline: 3px solid #c58a73; outline-offset: 4px; } .ds-whatsapp-mobile:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Directional Icon Pair",
+      "kind": "custom",
+      "refersTo": "directional-icon",
+      "description": "The authored external and down arrows shared by all direction-bearing actions.",
+      "html": "<span class=\"ds-icon-pair\"><svg class=\"ds-icon\" aria-label=\"Abrir enlace externo\" viewBox=\"0 0 20 20\"><path d=\"M5 15 15 5M8 5h7v7\"/></svg><svg class=\"ds-icon\" aria-label=\"Ir hacia abajo\" viewBox=\"0 0 20 20\"><path d=\"M10 4v11M5.5 10.5 10 15l4.5-4.5\"/></svg></span>",
+      "css": ".ds-icon-pair { display: inline-flex; align-items: center; gap: 20px; padding: 18px 22px; background: var(--ink, #151311); color: var(--sand, #cbb181); } .ds-icon { width: 17px; height: 17px; flex: 0 0 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; } .ds-icon:first-child:hover { transform: translate(3px,-3px); } .ds-icon:last-child:hover { transform: translateY(3px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El expediente sereno",
+    "overview": "The visual world translates a legal case dossier into a calm contemporary landing page. A charcoal case cover establishes gravity; oxblood binding, ivory document paper, brass actions, indexing rules, tab-like metadata, and editorial typography make the information feel ordered rather than institutional. The mood is composed, exact, local, and quietly premium.\n\nThe system is deliberately factual. Refined but recognizable office photography acts as evidence, while restrained transitions and authored directional icons help the page settle and guide without delaying access to the consultation path. Decorative spectacle, generic courthouse imagery, and inflated markers of prestige have no role here.",
+    "keyCharacteristics": [
+      "Charcoal cover fields, oxblood binding, and warm ivory paper.",
+      "Newsreader editorial headlines paired with compact DM Sans metadata.",
+      "Hairline rules that index content instead of boxed cards.",
+      "Sharp rectangular actions and one circular monogram.",
+      "Muted-brass actions and a consistent authored SVG arrow system.",
+      "Real office photography, selectively desaturated and contrast-refined.",
+      "Quiet image-settle and reveal motion with a complete reduced-motion path."
+    ],
+    "rules": [
+      { "name": "The Charcoal Frame Rule", "body": "Charcoal owns the opening and closing cover fields; deep oxblood belongs to the studio chapter, while brighter wine is reserved for annotation and emphasis.", "section": "colors" },
+      { "name": "The Evidence Green Rule", "body": "Green belongs only to the fixed mobile WhatsApp action; all other conversion paths stay inside the charcoal, oxblood, paper, and brass world.", "section": "colors" },
+      { "name": "The Editorial-to-Operational Rule", "body": "Newsreader carries meaning and emphasis; DM Sans carries instructions, metadata, and action. Do not swap their roles.", "section": "typography" },
+      { "name": "The Quiet Weight Rule", "body": "Hierarchy comes from scale, contrast, and spacing—not heavy serif weights. Display type remains regular.", "section": "typography" },
+      { "name": "The Flat File Rule", "body": "Content rests on paper or cover fields; never turn practice areas or office facts into floating rounded cards.", "section": "elevation" },
+      { "name": "The Single Seal Rule", "body": "Circles belong to the monogram only; do not propagate pill shapes, circular icon buttons, or soft cards across the interface.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do frame the page with charcoal, reserve deep oxblood for the studio, and use brass for action and archival emphasis.",
+      "Do keep practice-area labels and rows directly actionable through their area-specific WhatsApp messages.",
+      "Do use one-pixel rules, tracked metadata, and asymmetric split layouts to express the dossier idea.",
+      "Do preserve the real office photograph as evidence and keep motion calm, optional, and non-blocking.",
+      "Do use the authored 1.5px-stroke SVG external and down arrows consistently across actions and navigation cues.",
+      "Do keep keyboard focus obvious and honor `prefers-reduced-motion` across every animation and transition."
+    ],
+    "donts": [
+      "Don't use rounded cards, pill badges, gradients as decoration, or generic legal iconography.",
+      "Don't introduce gavels, scales of justice, marble courthouses, stock handshakes, or fabricated prestige imagery.",
+      "Don't use green outside the persistent mobile WhatsApp action.",
+      "Don't mix text glyph arrows, emoji, or third-party icon styles into the directional icon system.",
+      "Don't add decorative animation that delays access to practice areas or consultation actions.",
+      "Don't imply credentials, outcomes, testimonials, addresses, schedules, or services that are not supported by product truth."
+    ]
+  }
+}
