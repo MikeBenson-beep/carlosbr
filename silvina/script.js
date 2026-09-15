@@ -2,6 +2,9 @@ const header = document.querySelector('[data-header]');
 const menuButton = document.querySelector('.menu-button');
 const navigation = document.getElementById('navegacion');
 const year = document.getElementById('anio');
+const primaryCta = document.querySelector('[data-primary-cta]');
+const floatingWhatsapp = document.querySelector('.whatsapp-float');
+const contactSection = document.getElementById('contacto');
 
 if (year) year.textContent = new Date().getFullYear();
 
@@ -25,6 +28,24 @@ menuButton?.addEventListener('click', () => {
 });
 
 navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+if (primaryCta && floatingWhatsapp && contactSection && 'IntersectionObserver' in window) {
+  let primaryCtaVisible = true;
+  let contactVisible = false;
+  const updateFloatingCta = () => {
+    floatingWhatsapp.classList.toggle('is-active', !primaryCtaVisible && !contactVisible);
+  };
+  const floatingCtaObserver = new IntersectionObserver(([entry]) => {
+    primaryCtaVisible = entry.isIntersecting;
+    updateFloatingCta();
+  }, { threshold: 0, rootMargin: `-${header?.offsetHeight || 76}px 0px 0px` });
+  const contactObserver = new IntersectionObserver(([entry]) => {
+    contactVisible = entry.isIntersecting;
+    updateFloatingCta();
+  }, { threshold: 0.05 });
+  floatingCtaObserver.observe(primaryCta);
+  contactObserver.observe(contactSection);
+}
 
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {

@@ -97,7 +97,18 @@ components:
     typography: "{typography.action}"
     rounded: "{rounded.none}"
     padding: "0 20px"
-    height: "58px"
+    height: "56px"
+  mobile-header:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.none}"
+    height: "calc(72px + env(safe-area-inset-top))"
+  menu-control:
+    backgroundColor: "transparent"
+    textColor: "{colors.white}"
+    rounded: "{rounded.none}"
+    padding: "8px"
+    size: "44px"
   directional-icon:
     backgroundColor: "transparent"
     textColor: "currentColor"
@@ -183,7 +194,7 @@ The desktop composition alternates dossier spreads: a charcoal text cover beside
 
 The practice list is a four-part indexed row on wide screens: code, title, explanation, and action. At 1050px it condenses to three columns; at 760px it becomes a two-column record with copy and action stacked under the title. Below 760px, all major split sections become single-column, the hero image follows the cover copy, and a fixed full-width WhatsApp action remains within immediate reach.
 
-The fixed header is 92px tall over the hero and contracts to 76px after scrolling. Mobile uses the 76px header throughout, with the navigation unfolding as an ivory document sheet below it.
+The fixed header is 92px tall over the hero and contracts to 76px after scrolling on desktop. At 1050px and below, a 76px header establishes the compact layout. At 760px and below, the header is always opaque charcoal—before and after scroll—and its height becomes `calc(72px + env(safe-area-inset-top))`, with top padding equal to the device inset. Anchor scrolling and the navigation sheet use the same header-height variable so content is never obscured. The ivory navigation sheet unfolds directly below that safe-area-aware edge.
 
 ## Elevation & Depth
 
@@ -229,7 +240,7 @@ Practice areas are records, not cards.
 
 ### Navigation
 
-The fixed navigation begins transparent and white over the charcoal cover. After 24px of scroll it becomes an almost-opaque ivory sheet with ink text and the quiet Header Float shadow. Link hover is a hairline that grows from left to right. At 1050px, navigation becomes a menu sheet with Newsreader links and indexed separators; opening it locks page scroll.
+The fixed navigation begins transparent and white over the charcoal cover on desktop. After 24px of scroll it becomes an almost-opaque ivory sheet with ink text and the quiet Header Float shadow. Link hover is a hairline that grows from left to right. At 1050px, navigation becomes a menu sheet with Newsreader links and indexed separators; opening it locks page scroll. At 760px and below, the header remains opaque charcoal in every scroll state, and the menu uses a 44px square control with an 8px internal inset. Its two one-pixel strokes rotate into a close mark when expanded.
 
 ### Dossier Index
 
@@ -245,7 +256,9 @@ External and downward direction are drawn as a shared authored SVG system, never
 
 ### Mobile WhatsApp Bar
 
-Below 760px, a 58px fixed green bar spans the viewport with 16px side insets and a 14px bottom inset. It is the only persistent floating action and stays above the page with the Mobile Conversion Lift shadow.
+Below 760px, a 56px fixed green bar uses `max(14px, env(safe-area-inset-left/right))` for its side insets and `max(12px, env(safe-area-inset-bottom))` beneath it. It begins translated below the viewport, invisible, non-interactive, and removed from hit testing. It becomes active only after the primary hero CTA has left view and while the contact section is not visible; opening the navigation hides it again. Its 320ms spring-like entrance and Mobile Conversion Lift shadow keep the control available without duplicating nearby actions.
+
+**The Contextual Persistence Rule.** The floating WhatsApp action appears only in the middle of the mobile journey: never beside the hero CTA, never over the contact section, and never behind an open menu.
 
 ### Photography
 
@@ -260,6 +273,8 @@ Use the supplied office photograph as the primary evidence image. Crop it to cov
 - **Do** use one-pixel rules, tracked metadata, and asymmetric split layouts to express the dossier idea.
 - **Do** preserve the real office photograph as evidence and keep motion calm, optional, and non-blocking.
 - **Do** use the authored 1.5px-stroke SVG external and down arrows consistently across actions and navigation cues.
+- **Do** keep the mobile header opaque, safe-area-aware, and synchronized with anchor and menu offsets.
+- **Do** show the floating WhatsApp action only when both the primary CTA and contact section are out of view, and hide it while navigation is open.
 - **Do** keep keyboard focus obvious and honor `prefers-reduced-motion` across every animation and transition.
 
 ### Don't:
@@ -268,5 +283,7 @@ Use the supplied office photograph as the primary evidence image. Crop it to cov
 - **Don't** introduce gavels, scales of justice, marble courthouses, stock handshakes, or fabricated prestige imagery.
 - **Don't** use green outside the persistent mobile WhatsApp action.
 - **Don't** mix text glyph arrows, emoji, or third-party icon styles into the directional icon system.
+- **Don't** let the mobile header become transparent or reduce the menu control below its 44px square target.
+- **Don't** pin the floating WhatsApp action over the primary CTA, the contact section, an open menu, or a device safe area.
 - **Don't** add decorative animation that delays access to practice areas or consultation actions.
 - **Don't** imply credentials, outcomes, testimonials, addresses, schedules, or services that are not supported by product truth.
